@@ -1,1 +1,0 @@
-URL: postgres://ua9ahld8odgf6j:p4527570fff57b718629e70590556711f7d0170ca146d2df0efc0ea8e56cb4e7d@cb889jp6h2eccm.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d9ppjsqqgsnr59

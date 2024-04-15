@@ -1,7 +1,12 @@
 .DS_Store
 
 *.jar
+postgres.txt
 
 !starburst-2.0.0.metabase-driver.jar
 
 .env
+
+\ocr_img
+
+
