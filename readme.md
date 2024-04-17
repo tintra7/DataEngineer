@@ -12,7 +12,18 @@ Create a file names it ".env" and add nessesary enviroment variable
 docker compose up -d
 ```
 
-If this is your first time run this project, please set stt = 0 and connect the code read data from Minio in loader.py file
+(Optional) Create your virtual enviroment
+```bash
+python -m venv env
+env\Scripts\activate.bat
+```
+
+Install packages
+```bash
+pip install -r requirements.txt
+```
+
+If this is your first time run this project, please set stt = 0 and comment the code read data from Minio in loader.py file
 
 ```bash
 python loader.py
