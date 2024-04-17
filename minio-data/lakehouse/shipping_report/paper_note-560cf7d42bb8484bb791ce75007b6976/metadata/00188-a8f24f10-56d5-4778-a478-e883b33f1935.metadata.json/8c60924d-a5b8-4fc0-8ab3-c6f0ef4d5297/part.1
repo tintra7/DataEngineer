@@ -1,0 +1,4911 @@
+ëð(FàWú[7š‚O†÷Áµ}î‘iEdRaR¹_«^ÍA{
+  "format-version" : 2,
+  "table-uuid" : "d48c28d8-fa9b-4c1c-9650-ffe71af27b4f",
+  "location" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976",
+  "last-sequence-number" : 189,
+  "last-updated-ms" : 1713293126105,
+  "last-column-id" : 8,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "accepted_at",
+      "required" : false,
+      "type" : "timestamp"
+    }, {
+      "id" : 2,
+      "name" : "boarded_at",
+      "required" : false,
+      "type" : "timestamp"
+    }, {
+      "id" : 3,
+      "name" : "picked_up_at",
+      "required" : false,
+      "type" : "timestamp"
+    }, {
+      "id" : 4,
+      "name" : "completed_at",
+      "required" : false,
+      "type" : "timestamp"
+    }, {
+      "id" : 5,
+      "name" : "price",
+      "required" : false,
+      "type" : "float"
+    }, {
+      "id" : 6,
+      "name" : "staffid",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 7,
+      "name" : "storename",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 8,
+      "name" : "shiptype",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "write.format.default" : "ORC"
+  },
+  "current-snapshot-id" : 5285343259028700341,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 5285343259028700341,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 1018499920617992976,
+    "timestamp-ms" : 1713292961225,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184240_00727_wjb43",
+      "changed-partition-count" : "0",
+      "total-records" : "0",
+      "total-files-size" : "0",
+      "total-data-files" : "0",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1018499920617992976-1-cacd184e-fbf1-4e35-8f7e-9d38696cce0d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 1193818048709547641,
+    "parent-snapshot-id" : 1018499920617992976,
+    "timestamp-ms" : 1713293065021,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184424_00729_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1057",
+      "changed-partition-count" : "1",
+      "total-records" : "1",
+      "total-files-size" : "1057",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1193818048709547641-1-76b981ce-a834-422c-bfeb-fd6d606df0e0.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 6734580166110044015,
+    "parent-snapshot-id" : 1193818048709547641,
+    "timestamp-ms" : 1713293065655,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184425_00730_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1076",
+      "changed-partition-count" : "1",
+      "total-records" : "2",
+      "total-files-size" : "2133",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6734580166110044015-1-ef3f9d27-abae-4d3b-a2b2-1e481491f381.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 4,
+    "snapshot-id" : 1580299008343533797,
+    "parent-snapshot-id" : 6734580166110044015,
+    "timestamp-ms" : 1713293066064,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184425_00731_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1062",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "3195",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1580299008343533797-1-0187f6f4-bfc2-4acb-9f54-5e061cbd2552.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 5,
+    "snapshot-id" : 7855553667464520672,
+    "parent-snapshot-id" : 1580299008343533797,
+    "timestamp-ms" : 1713293066463,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184426_00732_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1075",
+      "changed-partition-count" : "1",
+      "total-records" : "4",
+      "total-files-size" : "4270",
+      "total-data-files" : "4",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7855553667464520672-1-2f1ad0c5-5a58-4b17-95bd-c94198c7573b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 6,
+    "snapshot-id" : 6643102181981588087,
+    "parent-snapshot-id" : 7855553667464520672,
+    "timestamp-ms" : 1713293066823,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184426_00733_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1068",
+      "changed-partition-count" : "1",
+      "total-records" : "5",
+      "total-files-size" : "5338",
+      "total-data-files" : "5",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6643102181981588087-1-831a3a30-ccf9-4f1b-a282-bf584a66eca2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 7,
+    "snapshot-id" : 8406462510238664671,
+    "parent-snapshot-id" : 6643102181981588087,
+    "timestamp-ms" : 1713293067185,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184427_00734_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1056",
+      "changed-partition-count" : "1",
+      "total-records" : "6",
+      "total-files-size" : "6394",
+      "total-data-files" : "6",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8406462510238664671-1-9c290676-8115-4c98-8462-475972223bdf.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 8,
+    "snapshot-id" : 8934439150879522710,
+    "parent-snapshot-id" : 8406462510238664671,
+    "timestamp-ms" : 1713293067538,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184427_00735_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1085",
+      "changed-partition-count" : "1",
+      "total-records" : "7",
+      "total-files-size" : "7479",
+      "total-data-files" : "7",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8934439150879522710-1-00514405-7514-4f79-9834-99ce530fbb54.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 9,
+    "snapshot-id" : 2644096561256195625,
+    "parent-snapshot-id" : 8934439150879522710,
+    "timestamp-ms" : 1713293067899,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184427_00736_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1086",
+      "changed-partition-count" : "1",
+      "total-records" : "8",
+      "total-files-size" : "8565",
+      "total-data-files" : "8",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2644096561256195625-1-ff1225ca-1d5d-4d1d-af30-8bf1f73eb4c8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 10,
+    "snapshot-id" : 5555472780284756244,
+    "parent-snapshot-id" : 2644096561256195625,
+    "timestamp-ms" : 1713293068243,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184428_00737_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "9",
+      "total-files-size" : "9657",
+      "total-data-files" : "9",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5555472780284756244-1-49d17c4a-f25a-45da-93bf-d30c72322885.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 11,
+    "snapshot-id" : 8380450468495305402,
+    "parent-snapshot-id" : 5555472780284756244,
+    "timestamp-ms" : 1713293068569,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184428_00738_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1093",
+      "changed-partition-count" : "1",
+      "total-records" : "10",
+      "total-files-size" : "10750",
+      "total-data-files" : "10",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8380450468495305402-1-b18ae32b-b8d6-4005-b258-367991890b33.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 12,
+    "snapshot-id" : 4207623317293696589,
+    "parent-snapshot-id" : 8380450468495305402,
+    "timestamp-ms" : 1713293068913,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184428_00739_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1076",
+      "changed-partition-count" : "1",
+      "total-records" : "11",
+      "total-files-size" : "11826",
+      "total-data-files" : "11",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4207623317293696589-1-f67b509c-73cf-42cd-a64d-c272ba2b853f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 13,
+    "snapshot-id" : 2992483551351144327,
+    "parent-snapshot-id" : 4207623317293696589,
+    "timestamp-ms" : 1713293069211,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184429_00740_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1111",
+      "changed-partition-count" : "1",
+      "total-records" : "12",
+      "total-files-size" : "12937",
+      "total-data-files" : "12",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2992483551351144327-1-eedcceb7-4380-4216-b604-8969de8f9279.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 14,
+    "snapshot-id" : 3026513830348477081,
+    "parent-snapshot-id" : 2992483551351144327,
+    "timestamp-ms" : 1713293069532,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184429_00741_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1067",
+      "changed-partition-count" : "1",
+      "total-records" : "13",
+      "total-files-size" : "14004",
+      "total-data-files" : "13",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3026513830348477081-1-8077f7ef-0fd0-4535-9d96-dece596b2d3a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 15,
+    "snapshot-id" : 2568517779615546787,
+    "parent-snapshot-id" : 3026513830348477081,
+    "timestamp-ms" : 1713293069857,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184429_00742_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "14",
+      "total-files-size" : "15093",
+      "total-data-files" : "14",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2568517779615546787-1-ba5535f8-2812-44e3-8261-21222dd53d5b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 16,
+    "snapshot-id" : 3670247595614228689,
+    "parent-snapshot-id" : 2568517779615546787,
+    "timestamp-ms" : 1713293070157,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184430_00743_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1085",
+      "changed-partition-count" : "1",
+      "total-records" : "15",
+      "total-files-size" : "16178",
+      "total-data-files" : "15",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3670247595614228689-1-32707a9e-cfae-4f47-9444-e87c647bb269.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 17,
+    "snapshot-id" : 4472056076266944492,
+    "parent-snapshot-id" : 3670247595614228689,
+    "timestamp-ms" : 1713293070476,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184430_00744_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1075",
+      "changed-partition-count" : "1",
+      "total-records" : "16",
+      "total-files-size" : "17253",
+      "total-data-files" : "16",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4472056076266944492-1-6ee723da-1bcc-40a1-83b8-39736225f7fc.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 18,
+    "snapshot-id" : 1800674596819091198,
+    "parent-snapshot-id" : 4472056076266944492,
+    "timestamp-ms" : 1713293070782,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184430_00745_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1084",
+      "changed-partition-count" : "1",
+      "total-records" : "17",
+      "total-files-size" : "18337",
+      "total-data-files" : "17",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1800674596819091198-1-25fe51d9-2fe0-40dd-a975-1ec2c3a2d34b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 19,
+    "snapshot-id" : 7420840834950679504,
+    "parent-snapshot-id" : 1800674596819091198,
+    "timestamp-ms" : 1713293071120,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184431_00746_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1088",
+      "changed-partition-count" : "1",
+      "total-records" : "18",
+      "total-files-size" : "19425",
+      "total-data-files" : "18",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7420840834950679504-1-545f76be-9cec-4661-b1d4-b925f36903d2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 20,
+    "snapshot-id" : 3092531462824618423,
+    "parent-snapshot-id" : 7420840834950679504,
+    "timestamp-ms" : 1713293071431,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184431_00747_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "19",
+      "total-files-size" : "20514",
+      "total-data-files" : "19",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3092531462824618423-1-08c14381-26ea-4ce3-84fe-f07930acb625.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 21,
+    "snapshot-id" : 1080889349134780178,
+    "parent-snapshot-id" : 3092531462824618423,
+    "timestamp-ms" : 1713293071768,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184431_00748_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1056",
+      "changed-partition-count" : "1",
+      "total-records" : "20",
+      "total-files-size" : "21570",
+      "total-data-files" : "20",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1080889349134780178-1-305d66e4-fef0-413c-8308-3e049f175731.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 22,
+    "snapshot-id" : 7682518122977215027,
+    "parent-snapshot-id" : 1080889349134780178,
+    "timestamp-ms" : 1713293072102,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184432_00749_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "21",
+      "total-files-size" : "22662",
+      "total-data-files" : "21",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7682518122977215027-1-676ace42-67bb-4628-8a62-24325351437e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 23,
+    "snapshot-id" : 2203847136389016253,
+    "parent-snapshot-id" : 7682518122977215027,
+    "timestamp-ms" : 1713293072491,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184432_00750_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1074",
+      "changed-partition-count" : "1",
+      "total-records" : "22",
+      "total-files-size" : "23736",
+      "total-data-files" : "22",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2203847136389016253-1-05c78c1f-acf4-401b-8527-feb2f7dd3412.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 24,
+    "snapshot-id" : 8085553422275934031,
+    "parent-snapshot-id" : 2203847136389016253,
+    "timestamp-ms" : 1713293072807,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184432_00751_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1056",
+      "changed-partition-count" : "1",
+      "total-records" : "23",
+      "total-files-size" : "24792",
+      "total-data-files" : "23",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8085553422275934031-1-197a77f3-cda7-43bb-bf4f-6206656172f0.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 25,
+    "snapshot-id" : 2470175918665997931,
+    "parent-snapshot-id" : 8085553422275934031,
+    "timestamp-ms" : 1713293073159,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184433_00752_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1075",
+      "changed-partition-count" : "1",
+      "total-records" : "24",
+      "total-files-size" : "25867",
+      "total-data-files" : "24",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2470175918665997931-1-60b6b1ca-34e9-4df7-9380-95bddcc8e099.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 26,
+    "snapshot-id" : 5902750166192338439,
+    "parent-snapshot-id" : 2470175918665997931,
+    "timestamp-ms" : 1713293073512,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184433_00753_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1053",
+      "changed-partition-count" : "1",
+      "total-records" : "25",
+      "total-files-size" : "26920",
+      "total-data-files" : "25",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5902750166192338439-1-17150fbf-2bd2-413f-9de0-f28f25b46ed1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 27,
+    "snapshot-id" : 4236601344956616746,
+    "parent-snapshot-id" : 5902750166192338439,
+    "timestamp-ms" : 1713293073899,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184433_00754_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "26",
+      "total-files-size" : "28001",
+      "total-data-files" : "26",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4236601344956616746-1-e8ec8ead-bcf6-4381-a878-5060d59b69e7.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 28,
+    "snapshot-id" : 2865784645907522081,
+    "parent-snapshot-id" : 4236601344956616746,
+    "timestamp-ms" : 1713293074221,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184434_00755_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1067",
+      "changed-partition-count" : "1",
+      "total-records" : "27",
+      "total-files-size" : "29068",
+      "total-data-files" : "27",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2865784645907522081-1-946df16a-f7cf-4ccb-b6a5-da335dfd754f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 29,
+    "snapshot-id" : 8113834575874283507,
+    "parent-snapshot-id" : 2865784645907522081,
+    "timestamp-ms" : 1713293074548,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184434_00756_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1111",
+      "changed-partition-count" : "1",
+      "total-records" : "28",
+      "total-files-size" : "30179",
+      "total-data-files" : "28",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8113834575874283507-1-6079cc77-c58a-4eb7-9ec1-518a95d50ea3.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 30,
+    "snapshot-id" : 7706060334792741780,
+    "parent-snapshot-id" : 8113834575874283507,
+    "timestamp-ms" : 1713293074863,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184434_00757_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1054",
+      "changed-partition-count" : "1",
+      "total-records" : "29",
+      "total-files-size" : "31233",
+      "total-data-files" : "29",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7706060334792741780-1-c6ba4a58-77ab-47f8-99ae-cbc1e065b283.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 31,
+    "snapshot-id" : 1061152630713100782,
+    "parent-snapshot-id" : 7706060334792741780,
+    "timestamp-ms" : 1713293075225,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184435_00758_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1076",
+      "changed-partition-count" : "1",
+      "total-records" : "30",
+      "total-files-size" : "32309",
+      "total-data-files" : "30",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1061152630713100782-1-05e1e002-cae6-482d-aa34-a1a3f9fd695a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 32,
+    "snapshot-id" : 4463212531742167867,
+    "parent-snapshot-id" : 1061152630713100782,
+    "timestamp-ms" : 1713293075617,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184435_00759_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1077",
+      "changed-partition-count" : "1",
+      "total-records" : "31",
+      "total-files-size" : "33386",
+      "total-data-files" : "31",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4463212531742167867-1-79e2e2ce-d8d8-4c97-828b-323c79411222.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 33,
+    "snapshot-id" : 5807523182131438472,
+    "parent-snapshot-id" : 4463212531742167867,
+    "timestamp-ms" : 1713293075961,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184435_00760_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1066",
+      "changed-partition-count" : "1",
+      "total-records" : "32",
+      "total-files-size" : "34452",
+      "total-data-files" : "32",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5807523182131438472-1-99f9a4ea-b428-4a09-84ac-4b04f6c84bfc.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 34,
+    "snapshot-id" : 2034996747086170544,
+    "parent-snapshot-id" : 5807523182131438472,
+    "timestamp-ms" : 1713293076298,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184436_00761_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1074",
+      "changed-partition-count" : "1",
+      "total-records" : "33",
+      "total-files-size" : "35526",
+      "total-data-files" : "33",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2034996747086170544-1-6b02c87e-82e1-48c1-b77f-30b3e8665299.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 35,
+    "snapshot-id" : 6492368732764514159,
+    "parent-snapshot-id" : 2034996747086170544,
+    "timestamp-ms" : 1713293076645,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184436_00762_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1086",
+      "changed-partition-count" : "1",
+      "total-records" : "34",
+      "total-files-size" : "36612",
+      "total-data-files" : "34",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6492368732764514159-1-af98de35-c720-4a0d-b5ad-f35093d9f84d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 36,
+    "snapshot-id" : 989788752585645288,
+    "parent-snapshot-id" : 6492368732764514159,
+    "timestamp-ms" : 1713293076993,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184436_00763_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "35",
+      "total-files-size" : "37693",
+      "total-data-files" : "35",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-989788752585645288-1-c586aaac-7235-49ea-921d-01ebef5d469e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 37,
+    "snapshot-id" : 5184858335157474210,
+    "parent-snapshot-id" : 989788752585645288,
+    "timestamp-ms" : 1713293077309,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184437_00764_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1077",
+      "changed-partition-count" : "1",
+      "total-records" : "36",
+      "total-files-size" : "38770",
+      "total-data-files" : "36",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5184858335157474210-1-61a5bbe8-c88d-4bc5-b6d0-f02fa7aea50f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 38,
+    "snapshot-id" : 3743612295562995018,
+    "parent-snapshot-id" : 5184858335157474210,
+    "timestamp-ms" : 1713293077657,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184437_00765_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "37",
+      "total-files-size" : "39859",
+      "total-data-files" : "37",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3743612295562995018-1-07e5983a-5852-44b0-ac13-dac81ecb20ec.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 39,
+    "snapshot-id" : 5162423013547593698,
+    "parent-snapshot-id" : 3743612295562995018,
+    "timestamp-ms" : 1713293077990,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184437_00766_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1077",
+      "changed-partition-count" : "1",
+      "total-records" : "38",
+      "total-files-size" : "40936",
+      "total-data-files" : "38",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5162423013547593698-1-62f9242d-d8af-4a27-b19d-f3cd371fe9d2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 40,
+    "snapshot-id" : 3463485524251069816,
+    "parent-snapshot-id" : 5162423013547593698,
+    "timestamp-ms" : 1713293078288,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184438_00767_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1064",
+      "changed-partition-count" : "1",
+      "total-records" : "39",
+      "total-files-size" : "42000",
+      "total-data-files" : "39",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3463485524251069816-1-3f3f0ab2-9f70-4846-af09-a5553ff468ff.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 41,
+    "snapshot-id" : 3680974806291556777,
+    "parent-snapshot-id" : 3463485524251069816,
+    "timestamp-ms" : 1713293078575,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184438_00768_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1067",
+      "changed-partition-count" : "1",
+      "total-records" : "40",
+      "total-files-size" : "43067",
+      "total-data-files" : "40",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3680974806291556777-1-5010492d-1d62-4db4-82db-e0e694c3953a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 42,
+    "snapshot-id" : 6172644351858674728,
+    "parent-snapshot-id" : 3680974806291556777,
+    "timestamp-ms" : 1713293078875,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184438_00769_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1076",
+      "changed-partition-count" : "1",
+      "total-records" : "41",
+      "total-files-size" : "44143",
+      "total-data-files" : "41",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6172644351858674728-1-052d3a99-c114-4442-b53d-60b2b0e0ca00.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 43,
+    "snapshot-id" : 256392253463793288,
+    "parent-snapshot-id" : 6172644351858674728,
+    "timestamp-ms" : 1713293079143,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184439_00770_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1094",
+      "changed-partition-count" : "1",
+      "total-records" : "42",
+      "total-files-size" : "45237",
+      "total-data-files" : "42",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-256392253463793288-1-7acf2cc6-6cc2-46d3-8413-baf3f2d2bc64.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 44,
+    "snapshot-id" : 2847843325107520831,
+    "parent-snapshot-id" : 256392253463793288,
+    "timestamp-ms" : 1713293079428,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184439_00771_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1059",
+      "changed-partition-count" : "1",
+      "total-records" : "43",
+      "total-files-size" : "46296",
+      "total-data-files" : "43",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2847843325107520831-1-7dff646d-c29e-4056-abf2-b010ffa9c13f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 45,
+    "snapshot-id" : 5674621679344269281,
+    "parent-snapshot-id" : 2847843325107520831,
+    "timestamp-ms" : 1713293079741,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184439_00772_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1093",
+      "changed-partition-count" : "1",
+      "total-records" : "44",
+      "total-files-size" : "47389",
+      "total-data-files" : "44",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5674621679344269281-1-911a6bda-dcb8-48ca-a612-6fc38e3e1587.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 46,
+    "snapshot-id" : 901305689445438710,
+    "parent-snapshot-id" : 5674621679344269281,
+    "timestamp-ms" : 1713293080029,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184440_00773_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1097",
+      "changed-partition-count" : "1",
+      "total-records" : "45",
+      "total-files-size" : "48486",
+      "total-data-files" : "45",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-901305689445438710-1-bd521e69-37d0-4264-ace4-1db57985143c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 47,
+    "snapshot-id" : 9076609904676111174,
+    "parent-snapshot-id" : 901305689445438710,
+    "timestamp-ms" : 1713293080307,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184440_00774_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1103",
+      "changed-partition-count" : "1",
+      "total-records" : "46",
+      "total-files-size" : "49589",
+      "total-data-files" : "46",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-9076609904676111174-1-43239b2c-1434-4360-b1f1-c572bb567d15.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 48,
+    "snapshot-id" : 9188880910148869639,
+    "parent-snapshot-id" : 9076609904676111174,
+    "timestamp-ms" : 1713293080630,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184440_00775_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "47",
+      "total-files-size" : "50678",
+      "total-data-files" : "47",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-9188880910148869639-1-8742b81f-04c0-4e34-977c-c9c912816e9c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 49,
+    "snapshot-id" : 774571533382835089,
+    "parent-snapshot-id" : 9188880910148869639,
+    "timestamp-ms" : 1713293080947,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184440_00776_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1083",
+      "changed-partition-count" : "1",
+      "total-records" : "48",
+      "total-files-size" : "51761",
+      "total-data-files" : "48",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-774571533382835089-1-51574c02-6420-4b55-9041-92102f9da046.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 50,
+    "snapshot-id" : 7327264855704335191,
+    "parent-snapshot-id" : 774571533382835089,
+    "timestamp-ms" : 1713293081246,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184441_00777_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "49",
+      "total-files-size" : "52853",
+      "total-data-files" : "49",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7327264855704335191-1-6f7b4621-0d49-408b-9937-6757ea20fffc.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 51,
+    "snapshot-id" : 6388946862807564689,
+    "parent-snapshot-id" : 7327264855704335191,
+    "timestamp-ms" : 1713293081580,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184441_00778_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1086",
+      "changed-partition-count" : "1",
+      "total-records" : "50",
+      "total-files-size" : "53939",
+      "total-data-files" : "50",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6388946862807564689-1-39b05405-059c-49d4-a3a9-e2b6c16426df.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 52,
+    "snapshot-id" : 8713539869621589687,
+    "parent-snapshot-id" : 6388946862807564689,
+    "timestamp-ms" : 1713293081879,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184441_00779_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1085",
+      "changed-partition-count" : "1",
+      "total-records" : "51",
+      "total-files-size" : "55024",
+      "total-data-files" : "51",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8713539869621589687-1-de0b49e1-92c4-41b4-ac6c-150f704ce593.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 53,
+    "snapshot-id" : 6390218921855694125,
+    "parent-snapshot-id" : 8713539869621589687,
+    "timestamp-ms" : 1713293082162,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184442_00780_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1077",
+      "changed-partition-count" : "1",
+      "total-records" : "52",
+      "total-files-size" : "56101",
+      "total-data-files" : "52",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6390218921855694125-1-448d5c33-b811-42ad-9be3-893c72efe806.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 54,
+    "snapshot-id" : 5686878997606611341,
+    "parent-snapshot-id" : 6390218921855694125,
+    "timestamp-ms" : 1713293082456,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184442_00781_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "53",
+      "total-files-size" : "57190",
+      "total-data-files" : "53",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5686878997606611341-1-d56cb8e3-4cfd-4384-b9a3-57f5ff93d3d4.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 55,
+    "snapshot-id" : 1276243844663790145,
+    "parent-snapshot-id" : 5686878997606611341,
+    "timestamp-ms" : 1713293082751,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184442_00782_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "54",
+      "total-files-size" : "58282",
+      "total-data-files" : "54",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1276243844663790145-1-72e345f7-9098-4873-b1e9-f1a5e9d01331.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 56,
+    "snapshot-id" : 2981386797757751271,
+    "parent-snapshot-id" : 1276243844663790145,
+    "timestamp-ms" : 1713293083049,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184443_00783_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1053",
+      "changed-partition-count" : "1",
+      "total-records" : "55",
+      "total-files-size" : "59335",
+      "total-data-files" : "55",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2981386797757751271-1-d291b174-613b-4c82-9a95-3896c39ff073.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 57,
+    "snapshot-id" : 2686352517392012543,
+    "parent-snapshot-id" : 2981386797757751271,
+    "timestamp-ms" : 1713293083342,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184443_00784_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1101",
+      "changed-partition-count" : "1",
+      "total-records" : "56",
+      "total-files-size" : "60436",
+      "total-data-files" : "56",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2686352517392012543-1-711502c5-bac9-4b58-8b34-11bd4e2e84c7.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 58,
+    "snapshot-id" : 8799564332465013576,
+    "parent-snapshot-id" : 2686352517392012543,
+    "timestamp-ms" : 1713293083622,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184443_00785_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1119",
+      "changed-partition-count" : "1",
+      "total-records" : "57",
+      "total-files-size" : "61555",
+      "total-data-files" : "57",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8799564332465013576-1-fe9a2b6d-2fe0-4e14-ab64-133033d41ddb.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 59,
+    "snapshot-id" : 8472913559653274763,
+    "parent-snapshot-id" : 8799564332465013576,
+    "timestamp-ms" : 1713293083912,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184443_00786_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1056",
+      "changed-partition-count" : "1",
+      "total-records" : "58",
+      "total-files-size" : "62611",
+      "total-data-files" : "58",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8472913559653274763-1-7a1b04e7-b0d1-4a2e-94ea-a36dc8164eff.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 60,
+    "snapshot-id" : 1223850937999512102,
+    "parent-snapshot-id" : 8472913559653274763,
+    "timestamp-ms" : 1713293084207,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184444_00787_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1083",
+      "changed-partition-count" : "1",
+      "total-records" : "59",
+      "total-files-size" : "63694",
+      "total-data-files" : "59",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1223850937999512102-1-d6a193c3-43ae-4d3a-914b-35a87e8592e0.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 61,
+    "snapshot-id" : 2985497180473297017,
+    "parent-snapshot-id" : 1223850937999512102,
+    "timestamp-ms" : 1713293084544,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184444_00788_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1085",
+      "changed-partition-count" : "1",
+      "total-records" : "60",
+      "total-files-size" : "64779",
+      "total-data-files" : "60",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2985497180473297017-1-5ec52b0f-16a2-4900-ba7e-1104b74ac4ab.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 62,
+    "snapshot-id" : 6509579991068769270,
+    "parent-snapshot-id" : 2985497180473297017,
+    "timestamp-ms" : 1713293084829,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184444_00789_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "61",
+      "total-files-size" : "65871",
+      "total-data-files" : "61",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6509579991068769270-1-815d4794-16a4-431c-ae0e-5ade5e05d0e3.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 63,
+    "snapshot-id" : 8564422884386241582,
+    "parent-snapshot-id" : 6509579991068769270,
+    "timestamp-ms" : 1713293085229,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184445_00790_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1076",
+      "changed-partition-count" : "1",
+      "total-records" : "62",
+      "total-files-size" : "66947",
+      "total-data-files" : "62",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8564422884386241582-1-dd865da6-4710-41d4-bdfd-298ca14a13de.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 64,
+    "snapshot-id" : 8586616403630535655,
+    "parent-snapshot-id" : 8564422884386241582,
+    "timestamp-ms" : 1713293085521,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184445_00791_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1083",
+      "changed-partition-count" : "1",
+      "total-records" : "63",
+      "total-files-size" : "68030",
+      "total-data-files" : "63",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8586616403630535655-1-b2ba9add-27cf-4cdf-bcd3-c1f3da40d855.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 65,
+    "snapshot-id" : 141384098832851243,
+    "parent-snapshot-id" : 8586616403630535655,
+    "timestamp-ms" : 1713293085846,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184445_00792_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1077",
+      "changed-partition-count" : "1",
+      "total-records" : "64",
+      "total-files-size" : "69107",
+      "total-data-files" : "64",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-141384098832851243-1-e9c08df1-8d16-410d-94be-245385a7176f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 66,
+    "snapshot-id" : 2596092646158889539,
+    "parent-snapshot-id" : 141384098832851243,
+    "timestamp-ms" : 1713293086178,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184446_00793_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1062",
+      "changed-partition-count" : "1",
+      "total-records" : "65",
+      "total-files-size" : "70169",
+      "total-data-files" : "65",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2596092646158889539-1-871021b2-a01a-423d-b5f0-809a3095a99e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 67,
+    "snapshot-id" : 7215702236136551660,
+    "parent-snapshot-id" : 2596092646158889539,
+    "timestamp-ms" : 1713293086469,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184446_00794_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1107",
+      "changed-partition-count" : "1",
+      "total-records" : "66",
+      "total-files-size" : "71276",
+      "total-data-files" : "66",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7215702236136551660-1-9e80442a-bfb3-4ee0-a5dc-11c7756313c4.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 68,
+    "snapshot-id" : 9118876006466069136,
+    "parent-snapshot-id" : 7215702236136551660,
+    "timestamp-ms" : 1713293086861,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184446_00795_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1087",
+      "changed-partition-count" : "1",
+      "total-records" : "67",
+      "total-files-size" : "72363",
+      "total-data-files" : "67",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-9118876006466069136-1-45cfa991-6513-465a-a112-c7e36a5ca44f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 69,
+    "snapshot-id" : 4980583149448846018,
+    "parent-snapshot-id" : 9118876006466069136,
+    "timestamp-ms" : 1713293087170,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184447_00796_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "68",
+      "total-files-size" : "73444",
+      "total-data-files" : "68",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4980583149448846018-1-8601a610-7842-4114-bdba-138d30b9c2d1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 70,
+    "snapshot-id" : 6070180131022635357,
+    "parent-snapshot-id" : 4980583149448846018,
+    "timestamp-ms" : 1713293087445,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184447_00797_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "69",
+      "total-files-size" : "74533",
+      "total-data-files" : "69",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6070180131022635357-1-2552e6b6-5b3e-4afd-851b-2afa2b132a4a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 71,
+    "snapshot-id" : 3739119166526988574,
+    "parent-snapshot-id" : 6070180131022635357,
+    "timestamp-ms" : 1713293087727,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184447_00798_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1054",
+      "changed-partition-count" : "1",
+      "total-records" : "70",
+      "total-files-size" : "75587",
+      "total-data-files" : "70",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3739119166526988574-1-110df945-f9fd-4e0d-8eb4-15f4a4c4a911.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 72,
+    "snapshot-id" : 2411501259587424168,
+    "parent-snapshot-id" : 3739119166526988574,
+    "timestamp-ms" : 1713293088028,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184448_00799_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1085",
+      "changed-partition-count" : "1",
+      "total-records" : "71",
+      "total-files-size" : "76672",
+      "total-data-files" : "71",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2411501259587424168-1-72648aaa-3f38-4f46-a6c2-b7eae43c2fa6.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 73,
+    "snapshot-id" : 9065882289217307631,
+    "parent-snapshot-id" : 2411501259587424168,
+    "timestamp-ms" : 1713293088349,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184448_00800_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1106",
+      "changed-partition-count" : "1",
+      "total-records" : "72",
+      "total-files-size" : "77778",
+      "total-data-files" : "72",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-9065882289217307631-1-3e7a5a1a-7bfb-4979-8ac2-d53d03c41d3e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 74,
+    "snapshot-id" : 3963272272285812710,
+    "parent-snapshot-id" : 9065882289217307631,
+    "timestamp-ms" : 1713293088640,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184448_00801_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1079",
+      "changed-partition-count" : "1",
+      "total-records" : "73",
+      "total-files-size" : "78857",
+      "total-data-files" : "73",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3963272272285812710-1-8e775211-87a9-4943-8bb2-d576b969f28d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 75,
+    "snapshot-id" : 881145263172278079,
+    "parent-snapshot-id" : 3963272272285812710,
+    "timestamp-ms" : 1713293088946,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184448_00802_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1096",
+      "changed-partition-count" : "1",
+      "total-records" : "74",
+      "total-files-size" : "79953",
+      "total-data-files" : "74",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-881145263172278079-1-b3092051-736d-4090-b29b-31a4bdf0cb0d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 76,
+    "snapshot-id" : 1294766330188623317,
+    "parent-snapshot-id" : 881145263172278079,
+    "timestamp-ms" : 1713293089242,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184449_00803_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1047",
+      "changed-partition-count" : "1",
+      "total-records" : "75",
+      "total-files-size" : "81000",
+      "total-data-files" : "75",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1294766330188623317-1-cb3b069c-99dd-40dc-bee9-a7b2b58df7e9.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 77,
+    "snapshot-id" : 2168067414807988197,
+    "parent-snapshot-id" : 1294766330188623317,
+    "timestamp-ms" : 1713293089522,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184449_00804_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1062",
+      "changed-partition-count" : "1",
+      "total-records" : "76",
+      "total-files-size" : "82062",
+      "total-data-files" : "76",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2168067414807988197-1-6bc40607-ebfd-440b-bf1a-5a3498f6d3a8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 78,
+    "snapshot-id" : 8278058154614315228,
+    "parent-snapshot-id" : 2168067414807988197,
+    "timestamp-ms" : 1713293089800,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184449_00805_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1067",
+      "changed-partition-count" : "1",
+      "total-records" : "77",
+      "total-files-size" : "83129",
+      "total-data-files" : "77",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8278058154614315228-1-8ad164ea-b3d1-4dd1-9266-3513d310ca12.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 79,
+    "snapshot-id" : 4660088306784227738,
+    "parent-snapshot-id" : 8278058154614315228,
+    "timestamp-ms" : 1713293090085,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184450_00806_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "78",
+      "total-files-size" : "84201",
+      "total-data-files" : "78",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4660088306784227738-1-599b39c9-2264-40b2-aa16-c21f2a512b79.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 80,
+    "snapshot-id" : 419139679753180054,
+    "parent-snapshot-id" : 4660088306784227738,
+    "timestamp-ms" : 1713293090364,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184450_00807_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1104",
+      "changed-partition-count" : "1",
+      "total-records" : "79",
+      "total-files-size" : "85305",
+      "total-data-files" : "79",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-419139679753180054-1-de7b437e-2b81-41b5-b4da-0f67fd07242d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 81,
+    "snapshot-id" : 646294372158598056,
+    "parent-snapshot-id" : 419139679753180054,
+    "timestamp-ms" : 1713293090662,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184450_00808_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1076",
+      "changed-partition-count" : "1",
+      "total-records" : "80",
+      "total-files-size" : "86381",
+      "total-data-files" : "80",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-646294372158598056-1-64b75164-5eb9-4120-bb32-207f474ca943.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 82,
+    "snapshot-id" : 4403881016586755191,
+    "parent-snapshot-id" : 646294372158598056,
+    "timestamp-ms" : 1713293090960,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184450_00809_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "81",
+      "total-files-size" : "87462",
+      "total-data-files" : "81",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4403881016586755191-1-a0f3c3f6-167b-4abb-83a1-023aa897f36d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 83,
+    "snapshot-id" : 111062722330379421,
+    "parent-snapshot-id" : 4403881016586755191,
+    "timestamp-ms" : 1713293091256,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184451_00810_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1057",
+      "changed-partition-count" : "1",
+      "total-records" : "82",
+      "total-files-size" : "88519",
+      "total-data-files" : "82",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-111062722330379421-1-6ed23f5f-6d80-484a-9659-73d1381c7da6.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 84,
+    "snapshot-id" : 5554020601518358094,
+    "parent-snapshot-id" : 111062722330379421,
+    "timestamp-ms" : 1713293091527,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184451_00811_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1076",
+      "changed-partition-count" : "1",
+      "total-records" : "83",
+      "total-files-size" : "89595",
+      "total-data-files" : "83",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5554020601518358094-1-8a66094c-2c2d-419a-84dc-defb8bd9ab9b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 85,
+    "snapshot-id" : 5510359978154220302,
+    "parent-snapshot-id" : 5554020601518358094,
+    "timestamp-ms" : 1713293091845,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184451_00812_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1084",
+      "changed-partition-count" : "1",
+      "total-records" : "84",
+      "total-files-size" : "90679",
+      "total-data-files" : "84",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5510359978154220302-1-1fb2f5a7-55ce-4442-8a4e-784b358638e6.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 86,
+    "snapshot-id" : 6991430765856857391,
+    "parent-snapshot-id" : 5510359978154220302,
+    "timestamp-ms" : 1713293092125,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184452_00813_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1063",
+      "changed-partition-count" : "1",
+      "total-records" : "85",
+      "total-files-size" : "91742",
+      "total-data-files" : "85",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6991430765856857391-1-b8bbf042-9128-4c22-9352-56a18ea48ab0.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 87,
+    "snapshot-id" : 8875041649285136544,
+    "parent-snapshot-id" : 6991430765856857391,
+    "timestamp-ms" : 1713293092419,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184452_00814_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1084",
+      "changed-partition-count" : "1",
+      "total-records" : "86",
+      "total-files-size" : "92826",
+      "total-data-files" : "86",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8875041649285136544-1-f736a9c8-260c-4ded-9e9b-317b35da5998.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 88,
+    "snapshot-id" : 1926158917687330800,
+    "parent-snapshot-id" : 8875041649285136544,
+    "timestamp-ms" : 1713293092724,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184452_00815_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "87",
+      "total-files-size" : "93918",
+      "total-data-files" : "87",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1926158917687330800-1-3ed99298-95c0-4546-8148-c245e82a82ef.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 89,
+    "snapshot-id" : 7654552902295437687,
+    "parent-snapshot-id" : 1926158917687330800,
+    "timestamp-ms" : 1713293093007,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184452_00816_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "88",
+      "total-files-size" : "94999",
+      "total-data-files" : "88",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7654552902295437687-1-937fdae0-75cd-4524-9ade-ec7638a68b1e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 90,
+    "snapshot-id" : 4513305275826095582,
+    "parent-snapshot-id" : 7654552902295437687,
+    "timestamp-ms" : 1713293093307,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184453_00817_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "89",
+      "total-files-size" : "96080",
+      "total-data-files" : "89",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4513305275826095582-1-99478136-8f6e-4537-84ce-da7e97431c42.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 91,
+    "snapshot-id" : 1674800397749668774,
+    "parent-snapshot-id" : 4513305275826095582,
+    "timestamp-ms" : 1713293093594,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184453_00818_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1071",
+      "changed-partition-count" : "1",
+      "total-records" : "90",
+      "total-files-size" : "97151",
+      "total-data-files" : "90",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1674800397749668774-1-0b9f1f11-ac82-4124-9432-a3155af46a6c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 92,
+    "snapshot-id" : 4361987307161610894,
+    "parent-snapshot-id" : 1674800397749668774,
+    "timestamp-ms" : 1713293093897,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184453_00819_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1110",
+      "changed-partition-count" : "1",
+      "total-records" : "91",
+      "total-files-size" : "98261",
+      "total-data-files" : "91",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4361987307161610894-1-2ae79883-473e-41f3-9bc0-47804f5ac04d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 93,
+    "snapshot-id" : 8620720287181647399,
+    "parent-snapshot-id" : 4361987307161610894,
+    "timestamp-ms" : 1713293094180,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184454_00820_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1075",
+      "changed-partition-count" : "1",
+      "total-records" : "92",
+      "total-files-size" : "99336",
+      "total-data-files" : "92",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8620720287181647399-1-0ae21526-042f-4573-97fc-bdcd45d482f4.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 94,
+    "snapshot-id" : 7821390787105300915,
+    "parent-snapshot-id" : 8620720287181647399,
+    "timestamp-ms" : 1713293094482,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184454_00821_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "93",
+      "total-files-size" : "100417",
+      "total-data-files" : "93",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7821390787105300915-1-73f6a10d-0d47-4ca3-bd6c-750d56168d33.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 95,
+    "snapshot-id" : 4011440273660866663,
+    "parent-snapshot-id" : 7821390787105300915,
+    "timestamp-ms" : 1713293094798,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184454_00822_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1078",
+      "changed-partition-count" : "1",
+      "total-records" : "94",
+      "total-files-size" : "101495",
+      "total-data-files" : "94",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4011440273660866663-1-d6aa56e1-e1d5-41a9-acd1-6225064ac868.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 96,
+    "snapshot-id" : 4414829424204245171,
+    "parent-snapshot-id" : 4011440273660866663,
+    "timestamp-ms" : 1713293095133,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184455_00823_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "95",
+      "total-files-size" : "102567",
+      "total-data-files" : "95",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4414829424204245171-1-11620ca3-36cf-4c7d-84f0-7c3612f8a830.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 97,
+    "snapshot-id" : 7640876874980295231,
+    "parent-snapshot-id" : 4414829424204245171,
+    "timestamp-ms" : 1713293095433,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184455_00824_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1084",
+      "changed-partition-count" : "1",
+      "total-records" : "96",
+      "total-files-size" : "103651",
+      "total-data-files" : "96",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7640876874980295231-1-959172b2-3511-4c80-9c81-d5b2d2bfa78a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 98,
+    "snapshot-id" : 8385047363845258262,
+    "parent-snapshot-id" : 7640876874980295231,
+    "timestamp-ms" : 1713293095751,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184455_00825_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "97",
+      "total-files-size" : "104723",
+      "total-data-files" : "97",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8385047363845258262-1-a8dce2a2-22ef-4aae-85ba-404870e6741a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 99,
+    "snapshot-id" : 5264362330637096180,
+    "parent-snapshot-id" : 8385047363845258262,
+    "timestamp-ms" : 1713293096071,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184456_00826_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1099",
+      "changed-partition-count" : "1",
+      "total-records" : "98",
+      "total-files-size" : "105822",
+      "total-data-files" : "98",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5264362330637096180-1-18bb3795-de48-4e77-aa5f-191468e88601.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 100,
+    "snapshot-id" : 6942452796861607875,
+    "parent-snapshot-id" : 5264362330637096180,
+    "timestamp-ms" : 1713293096365,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184456_00827_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1076",
+      "changed-partition-count" : "1",
+      "total-records" : "99",
+      "total-files-size" : "106898",
+      "total-data-files" : "99",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6942452796861607875-1-a85ac990-4510-4af8-b1fb-cf4d8fdfc690.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 101,
+    "snapshot-id" : 5281413822471227329,
+    "parent-snapshot-id" : 6942452796861607875,
+    "timestamp-ms" : 1713293097429,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184456_00828_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1054",
+      "changed-partition-count" : "1",
+      "total-records" : "100",
+      "total-files-size" : "107952",
+      "total-data-files" : "100",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5281413822471227329-1-5bf0d31d-60ad-44cc-9888-4960e3118f02.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 102,
+    "snapshot-id" : 2641148671690785741,
+    "parent-snapshot-id" : 5281413822471227329,
+    "timestamp-ms" : 1713293097805,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184457_00829_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "101",
+      "total-files-size" : "109044",
+      "total-data-files" : "101",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2641148671690785741-1-455ecd6a-2102-46f2-8778-51cf2dba8ab1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 103,
+    "snapshot-id" : 3190520619014558300,
+    "parent-snapshot-id" : 2641148671690785741,
+    "timestamp-ms" : 1713293098092,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184458_00830_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "102",
+      "total-files-size" : "110136",
+      "total-data-files" : "102",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3190520619014558300-1-8057faa5-627f-4da4-b2b0-aa4952713d3f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 104,
+    "snapshot-id" : 2120694460777916104,
+    "parent-snapshot-id" : 3190520619014558300,
+    "timestamp-ms" : 1713293098374,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184458_00831_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "103",
+      "total-files-size" : "111225",
+      "total-data-files" : "103",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2120694460777916104-1-4a115814-606b-4d27-93ce-a8bcdd5f2aef.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 105,
+    "snapshot-id" : 7121278741319061296,
+    "parent-snapshot-id" : 2120694460777916104,
+    "timestamp-ms" : 1713293098672,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184458_00832_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1067",
+      "changed-partition-count" : "1",
+      "total-records" : "104",
+      "total-files-size" : "112292",
+      "total-data-files" : "104",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7121278741319061296-1-23dc6e3b-5bd2-4a1e-ae42-a2ba3a79730a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 106,
+    "snapshot-id" : 4242572606563075509,
+    "parent-snapshot-id" : 7121278741319061296,
+    "timestamp-ms" : 1713293098959,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184458_00833_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1075",
+      "changed-partition-count" : "1",
+      "total-records" : "105",
+      "total-files-size" : "113367",
+      "total-data-files" : "105",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4242572606563075509-1-ec9bfc5b-6d5f-4f1d-abb2-baaae1a504ca.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 107,
+    "snapshot-id" : 4504093714641962413,
+    "parent-snapshot-id" : 4242572606563075509,
+    "timestamp-ms" : 1713293099251,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184459_00834_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1104",
+      "changed-partition-count" : "1",
+      "total-records" : "106",
+      "total-files-size" : "114471",
+      "total-data-files" : "106",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4504093714641962413-1-729eca9c-055a-4e0a-8e02-5529ee0f0264.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 108,
+    "snapshot-id" : 8032872394536321889,
+    "parent-snapshot-id" : 4504093714641962413,
+    "timestamp-ms" : 1713293099576,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184459_00835_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1078",
+      "changed-partition-count" : "1",
+      "total-records" : "107",
+      "total-files-size" : "115549",
+      "total-data-files" : "107",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8032872394536321889-1-98f98db4-a2a6-4630-8892-438187c46a81.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 109,
+    "snapshot-id" : 1168230105025033808,
+    "parent-snapshot-id" : 8032872394536321889,
+    "timestamp-ms" : 1713293099878,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184459_00836_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1095",
+      "changed-partition-count" : "1",
+      "total-records" : "108",
+      "total-files-size" : "116644",
+      "total-data-files" : "108",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1168230105025033808-1-ba103a89-7d54-4f40-9021-3c517aa60a1c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 110,
+    "snapshot-id" : 715175512198562633,
+    "parent-snapshot-id" : 1168230105025033808,
+    "timestamp-ms" : 1713293100165,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184500_00837_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "109",
+      "total-files-size" : "117725",
+      "total-data-files" : "109",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-715175512198562633-1-3207df65-7315-4d2c-b112-1044046392ac.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 111,
+    "snapshot-id" : 5412145207346179669,
+    "parent-snapshot-id" : 715175512198562633,
+    "timestamp-ms" : 1713293100448,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184500_00838_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "110",
+      "total-files-size" : "118806",
+      "total-data-files" : "110",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5412145207346179669-1-3fbd1f25-8a0d-4e9f-bd83-af4e367fc1c2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 112,
+    "snapshot-id" : 6389404711700532012,
+    "parent-snapshot-id" : 5412145207346179669,
+    "timestamp-ms" : 1713293100742,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184500_00839_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "111",
+      "total-files-size" : "119878",
+      "total-data-files" : "111",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6389404711700532012-1-f573f1ff-e661-490c-91fd-6291e90a83d7.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 113,
+    "snapshot-id" : 7790548763516903965,
+    "parent-snapshot-id" : 6389404711700532012,
+    "timestamp-ms" : 1713293101021,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184501_00840_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1088",
+      "changed-partition-count" : "1",
+      "total-records" : "112",
+      "total-files-size" : "120966",
+      "total-data-files" : "112",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7790548763516903965-1-12f6d1da-b362-4e11-a4a0-b6d0f87ec839.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 114,
+    "snapshot-id" : 5345772835708792868,
+    "parent-snapshot-id" : 7790548763516903965,
+    "timestamp-ms" : 1713293101327,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184501_00841_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "113",
+      "total-files-size" : "122058",
+      "total-data-files" : "113",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5345772835708792868-1-5cafb173-925f-4f5e-ba67-4e9234d81b28.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 115,
+    "snapshot-id" : 1085491684158049073,
+    "parent-snapshot-id" : 5345772835708792868,
+    "timestamp-ms" : 1713293101638,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184501_00842_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1085",
+      "changed-partition-count" : "1",
+      "total-records" : "114",
+      "total-files-size" : "123143",
+      "total-data-files" : "114",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1085491684158049073-1-3874451e-8b11-4f70-a1ac-67b5704151b3.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 116,
+    "snapshot-id" : 7932757467915365236,
+    "parent-snapshot-id" : 1085491684158049073,
+    "timestamp-ms" : 1713293101929,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184501_00843_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "115",
+      "total-files-size" : "124215",
+      "total-data-files" : "115",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7932757467915365236-1-7ff49f56-48e5-46a6-a809-9c28f0f1f508.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 117,
+    "snapshot-id" : 5976182770860045762,
+    "parent-snapshot-id" : 7932757467915365236,
+    "timestamp-ms" : 1713293102230,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184502_00844_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1119",
+      "changed-partition-count" : "1",
+      "total-records" : "116",
+      "total-files-size" : "125334",
+      "total-data-files" : "116",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5976182770860045762-1-a8645fc6-9508-4e0a-a079-619c6e9831fd.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 118,
+    "snapshot-id" : 1360424237294857167,
+    "parent-snapshot-id" : 5976182770860045762,
+    "timestamp-ms" : 1713293102548,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184502_00845_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1107",
+      "changed-partition-count" : "1",
+      "total-records" : "117",
+      "total-files-size" : "126441",
+      "total-data-files" : "117",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1360424237294857167-1-3b9fcd7c-ba8c-4c44-9a4e-d747c40a5630.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 119,
+    "snapshot-id" : 8752586533802013915,
+    "parent-snapshot-id" : 1360424237294857167,
+    "timestamp-ms" : 1713293102867,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184502_00846_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1055",
+      "changed-partition-count" : "1",
+      "total-records" : "118",
+      "total-files-size" : "127496",
+      "total-data-files" : "118",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8752586533802013915-1-af342658-6839-45a2-b98b-c1c3700ac306.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 120,
+    "snapshot-id" : 3071828868882931890,
+    "parent-snapshot-id" : 8752586533802013915,
+    "timestamp-ms" : 1713293103165,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184503_00847_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "119",
+      "total-files-size" : "128568",
+      "total-data-files" : "119",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3071828868882931890-1-81e1a865-ae33-41f3-972e-b9d219161e87.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 121,
+    "snapshot-id" : 1562575472497527069,
+    "parent-snapshot-id" : 3071828868882931890,
+    "timestamp-ms" : 1713293103485,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184503_00848_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "120",
+      "total-files-size" : "129649",
+      "total-data-files" : "120",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1562575472497527069-1-03b042ae-273d-412e-b8aa-379328e1f63e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 122,
+    "snapshot-id" : 7357039388924071865,
+    "parent-snapshot-id" : 1562575472497527069,
+    "timestamp-ms" : 1713293103790,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184503_00849_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1086",
+      "changed-partition-count" : "1",
+      "total-records" : "121",
+      "total-files-size" : "130735",
+      "total-data-files" : "121",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7357039388924071865-1-74785c9c-33bd-42dd-ba53-1f1cf4d43045.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 123,
+    "snapshot-id" : 3909135845310446566,
+    "parent-snapshot-id" : 7357039388924071865,
+    "timestamp-ms" : 1713293104123,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184504_00850_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1091",
+      "changed-partition-count" : "1",
+      "total-records" : "122",
+      "total-files-size" : "131826",
+      "total-data-files" : "122",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3909135845310446566-1-89a0be0e-0042-4ccc-bf0a-e6f23b62aaa5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 124,
+    "snapshot-id" : 7709303801876325778,
+    "parent-snapshot-id" : 3909135845310446566,
+    "timestamp-ms" : 1713293104515,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184504_00851_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1059",
+      "changed-partition-count" : "1",
+      "total-records" : "123",
+      "total-files-size" : "132885",
+      "total-data-files" : "123",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7709303801876325778-1-d03fdcbe-0553-4822-8d16-7d87c85be8fd.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 125,
+    "snapshot-id" : 3242586309111476286,
+    "parent-snapshot-id" : 7709303801876325778,
+    "timestamp-ms" : 1713293104874,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184504_00852_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "124",
+      "total-files-size" : "133957",
+      "total-data-files" : "124",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3242586309111476286-1-4ecbe340-2238-4e7e-8e38-11bc76b16096.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 126,
+    "snapshot-id" : 1901893444903918265,
+    "parent-snapshot-id" : 3242586309111476286,
+    "timestamp-ms" : 1713293105382,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184505_00853_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1087",
+      "changed-partition-count" : "1",
+      "total-records" : "125",
+      "total-files-size" : "135044",
+      "total-data-files" : "125",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1901893444903918265-1-44a4922f-96b1-49d9-a983-bd77a8c909f4.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 127,
+    "snapshot-id" : 6594450320229182887,
+    "parent-snapshot-id" : 1901893444903918265,
+    "timestamp-ms" : 1713293105781,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184505_00854_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "126",
+      "total-files-size" : "136136",
+      "total-data-files" : "126",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6594450320229182887-1-f78455ac-2a83-4681-920a-2f51b67ba9da.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 128,
+    "snapshot-id" : 2247136796225229339,
+    "parent-snapshot-id" : 6594450320229182887,
+    "timestamp-ms" : 1713293106137,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184506_00855_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1079",
+      "changed-partition-count" : "1",
+      "total-records" : "127",
+      "total-files-size" : "137215",
+      "total-data-files" : "127",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2247136796225229339-1-afb4dbd6-1ce0-4fa3-bbf1-6cf06c6de3db.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 129,
+    "snapshot-id" : 9087990668431694905,
+    "parent-snapshot-id" : 2247136796225229339,
+    "timestamp-ms" : 1713293106478,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184506_00856_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "128",
+      "total-files-size" : "138287",
+      "total-data-files" : "128",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-9087990668431694905-1-55f0ca3b-bd92-49fb-aaa0-72770af8ee81.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 130,
+    "snapshot-id" : 7118217829926299737,
+    "parent-snapshot-id" : 9087990668431694905,
+    "timestamp-ms" : 1713293106790,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184506_00857_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1065",
+      "changed-partition-count" : "1",
+      "total-records" : "129",
+      "total-files-size" : "139352",
+      "total-data-files" : "129",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7118217829926299737-1-e25a2b8b-6756-4648-95f1-7be5ddae5720.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 131,
+    "snapshot-id" : 1573017458180459283,
+    "parent-snapshot-id" : 7118217829926299737,
+    "timestamp-ms" : 1713293107083,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184507_00858_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1085",
+      "changed-partition-count" : "1",
+      "total-records" : "130",
+      "total-files-size" : "140437",
+      "total-data-files" : "130",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1573017458180459283-1-36cdf30d-836c-4acb-87b0-869f45ed2aa5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 132,
+    "snapshot-id" : 9032926365699521865,
+    "parent-snapshot-id" : 1573017458180459283,
+    "timestamp-ms" : 1713293107425,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184507_00859_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1104",
+      "changed-partition-count" : "1",
+      "total-records" : "131",
+      "total-files-size" : "141541",
+      "total-data-files" : "131",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-9032926365699521865-1-61247380-7208-48f4-b204-63bbcd7e4639.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 133,
+    "snapshot-id" : 5461527675525950518,
+    "parent-snapshot-id" : 9032926365699521865,
+    "timestamp-ms" : 1713293107743,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184507_00860_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1082",
+      "changed-partition-count" : "1",
+      "total-records" : "132",
+      "total-files-size" : "142623",
+      "total-data-files" : "132",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5461527675525950518-1-76269b89-d36b-4ab2-a79f-ab0197c51255.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 134,
+    "snapshot-id" : 7915832020320627084,
+    "parent-snapshot-id" : 5461527675525950518,
+    "timestamp-ms" : 1713293108049,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184508_00861_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1079",
+      "changed-partition-count" : "1",
+      "total-records" : "133",
+      "total-files-size" : "143702",
+      "total-data-files" : "133",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7915832020320627084-1-ce3d6119-e05b-4406-820c-99ec2000770c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 135,
+    "snapshot-id" : 8537225702872323929,
+    "parent-snapshot-id" : 7915832020320627084,
+    "timestamp-ms" : 1713293108353,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184508_00862_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "134",
+      "total-files-size" : "144783",
+      "total-data-files" : "134",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8537225702872323929-1-6200c925-0f94-47a4-a927-b240078cac71.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 136,
+    "snapshot-id" : 7417939662925883112,
+    "parent-snapshot-id" : 8537225702872323929,
+    "timestamp-ms" : 1713293108667,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184508_00863_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1067",
+      "changed-partition-count" : "1",
+      "total-records" : "135",
+      "total-files-size" : "145850",
+      "total-data-files" : "135",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7417939662925883112-1-ffa2ca6a-6692-48b4-aefc-376deb98a653.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 137,
+    "snapshot-id" : 8447786551586226938,
+    "parent-snapshot-id" : 7417939662925883112,
+    "timestamp-ms" : 1713293108994,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184508_00864_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1070",
+      "changed-partition-count" : "1",
+      "total-records" : "136",
+      "total-files-size" : "146920",
+      "total-data-files" : "136",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8447786551586226938-1-538e2afc-536e-4cf0-9e24-d586959f2fac.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 138,
+    "snapshot-id" : 4187913161860505185,
+    "parent-snapshot-id" : 8447786551586226938,
+    "timestamp-ms" : 1713293109313,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184509_00865_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1095",
+      "changed-partition-count" : "1",
+      "total-records" : "137",
+      "total-files-size" : "148015",
+      "total-data-files" : "137",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4187913161860505185-1-d7e17fed-d084-4e9d-a86e-f55198fe1090.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 139,
+    "snapshot-id" : 1809334767434805724,
+    "parent-snapshot-id" : 4187913161860505185,
+    "timestamp-ms" : 1713293109606,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184509_00866_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1088",
+      "changed-partition-count" : "1",
+      "total-records" : "138",
+      "total-files-size" : "149103",
+      "total-data-files" : "138",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1809334767434805724-1-980d5608-ac30-41e8-8484-6a02da6c5421.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 140,
+    "snapshot-id" : 164304530993468548,
+    "parent-snapshot-id" : 1809334767434805724,
+    "timestamp-ms" : 1713293109951,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184509_00867_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "139",
+      "total-files-size" : "150184",
+      "total-data-files" : "139",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-164304530993468548-1-026b4205-8cbd-4d02-b238-0266e182ee66.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 141,
+    "snapshot-id" : 6905821445745765326,
+    "parent-snapshot-id" : 164304530993468548,
+    "timestamp-ms" : 1713293110255,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184510_00868_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "140",
+      "total-files-size" : "151273",
+      "total-data-files" : "140",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6905821445745765326-1-39ef7331-779a-42fd-b459-42023a814efa.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 142,
+    "snapshot-id" : 8451908083588695750,
+    "parent-snapshot-id" : 6905821445745765326,
+    "timestamp-ms" : 1713293110556,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184510_00869_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "141",
+      "total-files-size" : "152365",
+      "total-data-files" : "141",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8451908083588695750-1-8c50bc9a-f747-4c7f-97c9-dc192ce16c7e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 143,
+    "snapshot-id" : 7547784055084908821,
+    "parent-snapshot-id" : 8451908083588695750,
+    "timestamp-ms" : 1713293110888,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184510_00870_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1069",
+      "changed-partition-count" : "1",
+      "total-records" : "142",
+      "total-files-size" : "153434",
+      "total-data-files" : "142",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7547784055084908821-1-1c129c16-db0a-4157-9240-59c6f5439907.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 144,
+    "snapshot-id" : 5933237668638510315,
+    "parent-snapshot-id" : 7547784055084908821,
+    "timestamp-ms" : 1713293111192,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184511_00871_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1059",
+      "changed-partition-count" : "1",
+      "total-records" : "143",
+      "total-files-size" : "154493",
+      "total-data-files" : "143",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5933237668638510315-1-927237eb-4cc9-4065-a5b7-143dcec2c9ce.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 145,
+    "snapshot-id" : 7444217625469835288,
+    "parent-snapshot-id" : 5933237668638510315,
+    "timestamp-ms" : 1713293111555,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184511_00872_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1099",
+      "changed-partition-count" : "1",
+      "total-records" : "144",
+      "total-files-size" : "155592",
+      "total-data-files" : "144",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7444217625469835288-1-160ae19e-c039-44ba-9cc7-a676f2bb25c7.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 146,
+    "snapshot-id" : 4694859319802608201,
+    "parent-snapshot-id" : 7444217625469835288,
+    "timestamp-ms" : 1713293111874,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184511_00873_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1066",
+      "changed-partition-count" : "1",
+      "total-records" : "145",
+      "total-files-size" : "156658",
+      "total-data-files" : "145",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4694859319802608201-1-5521e83a-560f-4dd7-98db-2c49dc85058a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 147,
+    "snapshot-id" : 6283107601794364873,
+    "parent-snapshot-id" : 4694859319802608201,
+    "timestamp-ms" : 1713293112201,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184512_00874_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "146",
+      "total-files-size" : "157747",
+      "total-data-files" : "146",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6283107601794364873-1-54fd6f5f-8450-41ac-8482-dd7b968a9874.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 148,
+    "snapshot-id" : 1242843938618123387,
+    "parent-snapshot-id" : 6283107601794364873,
+    "timestamp-ms" : 1713293112516,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184512_00875_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1063",
+      "changed-partition-count" : "1",
+      "total-records" : "147",
+      "total-files-size" : "158810",
+      "total-data-files" : "147",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1242843938618123387-1-d702fa31-6aa5-4a73-9708-1819a1feab71.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 149,
+    "snapshot-id" : 2474723470262602644,
+    "parent-snapshot-id" : 1242843938618123387,
+    "timestamp-ms" : 1713293112833,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184512_00876_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1094",
+      "changed-partition-count" : "1",
+      "total-records" : "148",
+      "total-files-size" : "159904",
+      "total-data-files" : "148",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2474723470262602644-1-8e81a08d-3bba-4c88-be71-fa4ef75c5a26.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 150,
+    "snapshot-id" : 6501981136315395907,
+    "parent-snapshot-id" : 2474723470262602644,
+    "timestamp-ms" : 1713293113148,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184513_00877_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "149",
+      "total-files-size" : "160976",
+      "total-data-files" : "149",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6501981136315395907-1-e9af85f9-5c48-47a0-8ae1-cf9e3f98e53e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 151,
+    "snapshot-id" : 3811667278383303263,
+    "parent-snapshot-id" : 6501981136315395907,
+    "timestamp-ms" : 1713293113454,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184513_00878_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "150",
+      "total-files-size" : "162057",
+      "total-data-files" : "150",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3811667278383303263-1-b0bfb797-2e15-4577-b543-ebd7418fe703.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 152,
+    "snapshot-id" : 496958819937050810,
+    "parent-snapshot-id" : 3811667278383303263,
+    "timestamp-ms" : 1713293113756,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184513_00879_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1102",
+      "changed-partition-count" : "1",
+      "total-records" : "151",
+      "total-files-size" : "163159",
+      "total-data-files" : "151",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-496958819937050810-1-3d860412-c121-49ed-abb2-a9d8d3a58306.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 153,
+    "snapshot-id" : 8850240770177311441,
+    "parent-snapshot-id" : 496958819937050810,
+    "timestamp-ms" : 1713293114068,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184514_00880_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "152",
+      "total-files-size" : "164251",
+      "total-data-files" : "152",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8850240770177311441-1-b83a69ba-8cea-4b0e-8caf-31b5411a268a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 154,
+    "snapshot-id" : 7512731572644635527,
+    "parent-snapshot-id" : 8850240770177311441,
+    "timestamp-ms" : 1713293114393,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184514_00881_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1057",
+      "changed-partition-count" : "1",
+      "total-records" : "153",
+      "total-files-size" : "165308",
+      "total-data-files" : "153",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7512731572644635527-1-72e33a87-b9e5-48cc-8d29-86453869a616.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 155,
+    "snapshot-id" : 9022981935572571488,
+    "parent-snapshot-id" : 7512731572644635527,
+    "timestamp-ms" : 1713293114729,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184514_00882_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1077",
+      "changed-partition-count" : "1",
+      "total-records" : "154",
+      "total-files-size" : "166385",
+      "total-data-files" : "154",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-9022981935572571488-1-fdfa7642-58bd-4353-a3de-a090dbc68e11.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 156,
+    "snapshot-id" : 253404203535511288,
+    "parent-snapshot-id" : 9022981935572571488,
+    "timestamp-ms" : 1713293115096,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184515_00883_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1103",
+      "changed-partition-count" : "1",
+      "total-records" : "155",
+      "total-files-size" : "167488",
+      "total-data-files" : "155",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-253404203535511288-1-cd388e93-2564-47a6-b87e-efbf3f31d654.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 157,
+    "snapshot-id" : 755051105496668432,
+    "parent-snapshot-id" : 253404203535511288,
+    "timestamp-ms" : 1713293115408,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184515_00884_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1054",
+      "changed-partition-count" : "1",
+      "total-records" : "156",
+      "total-files-size" : "168542",
+      "total-data-files" : "156",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-755051105496668432-1-6b67628c-ac92-4754-9a01-7c4a1d962732.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 158,
+    "snapshot-id" : 3644617166782502376,
+    "parent-snapshot-id" : 755051105496668432,
+    "timestamp-ms" : 1713293115777,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184515_00885_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "157",
+      "total-files-size" : "169623",
+      "total-data-files" : "157",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3644617166782502376-1-dcc32ea0-7fc3-4e67-8483-465dfd73e0e5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 159,
+    "snapshot-id" : 7494356050173109328,
+    "parent-snapshot-id" : 3644617166782502376,
+    "timestamp-ms" : 1713293116107,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184516_00886_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1063",
+      "changed-partition-count" : "1",
+      "total-records" : "158",
+      "total-files-size" : "170686",
+      "total-data-files" : "158",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7494356050173109328-1-032c8879-8228-48c4-97de-88a03037d10f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 160,
+    "snapshot-id" : 2183413493155227913,
+    "parent-snapshot-id" : 7494356050173109328,
+    "timestamp-ms" : 1713293116465,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184516_00887_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1079",
+      "changed-partition-count" : "1",
+      "total-records" : "159",
+      "total-files-size" : "171765",
+      "total-data-files" : "159",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2183413493155227913-1-4cb5b43c-70d6-4c6a-b6d3-091a24aa0f3d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 161,
+    "snapshot-id" : 2962970504250647605,
+    "parent-snapshot-id" : 2183413493155227913,
+    "timestamp-ms" : 1713293116788,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184516_00888_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1088",
+      "changed-partition-count" : "1",
+      "total-records" : "160",
+      "total-files-size" : "172853",
+      "total-data-files" : "160",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2962970504250647605-1-ebdd7d5f-25b5-4dc0-818d-77f1a83590e2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 162,
+    "snapshot-id" : 2897758321205569336,
+    "parent-snapshot-id" : 2962970504250647605,
+    "timestamp-ms" : 1713293117110,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184517_00889_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "161",
+      "total-files-size" : "173934",
+      "total-data-files" : "161",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-2897758321205569336-1-c5eaff24-873d-4a27-90be-0b1bdd2386d3.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 163,
+    "snapshot-id" : 7517043118606870965,
+    "parent-snapshot-id" : 2897758321205569336,
+    "timestamp-ms" : 1713293117452,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184517_00890_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1056",
+      "changed-partition-count" : "1",
+      "total-records" : "162",
+      "total-files-size" : "174990",
+      "total-data-files" : "162",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7517043118606870965-1-7462188d-04dd-490f-b777-107e925949ab.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 164,
+    "snapshot-id" : 5146765709018626751,
+    "parent-snapshot-id" : 7517043118606870965,
+    "timestamp-ms" : 1713293117772,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184517_00891_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1085",
+      "changed-partition-count" : "1",
+      "total-records" : "163",
+      "total-files-size" : "176075",
+      "total-data-files" : "163",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5146765709018626751-1-6bcb706e-1ec2-414f-bbb2-acff6e8bcda1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 165,
+    "snapshot-id" : 6516376558267076826,
+    "parent-snapshot-id" : 5146765709018626751,
+    "timestamp-ms" : 1713293118082,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184518_00892_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1104",
+      "changed-partition-count" : "1",
+      "total-records" : "164",
+      "total-files-size" : "177179",
+      "total-data-files" : "164",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6516376558267076826-1-5c51916c-2bed-4c3d-b460-fb97bda33c54.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 166,
+    "snapshot-id" : 6422440451081651097,
+    "parent-snapshot-id" : 6516376558267076826,
+    "timestamp-ms" : 1713293118405,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184518_00893_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1079",
+      "changed-partition-count" : "1",
+      "total-records" : "165",
+      "total-files-size" : "178258",
+      "total-data-files" : "165",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6422440451081651097-1-ef370a34-3279-4fe3-aa1f-5cb8215c68db.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 167,
+    "snapshot-id" : 7460782620649281509,
+    "parent-snapshot-id" : 6422440451081651097,
+    "timestamp-ms" : 1713293118713,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184518_00894_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "166",
+      "total-files-size" : "179347",
+      "total-data-files" : "166",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7460782620649281509-1-d3c71bd8-9871-4e87-bb6f-2dea68c30bd3.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 168,
+    "snapshot-id" : 7645003715275268481,
+    "parent-snapshot-id" : 7460782620649281509,
+    "timestamp-ms" : 1713293119038,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184519_00895_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1077",
+      "changed-partition-count" : "1",
+      "total-records" : "167",
+      "total-files-size" : "180424",
+      "total-data-files" : "167",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7645003715275268481-1-4439a763-732b-4b84-84ac-b5e103d5ab96.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 169,
+    "snapshot-id" : 1776705412640113745,
+    "parent-snapshot-id" : 7645003715275268481,
+    "timestamp-ms" : 1713293119350,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184519_00896_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1083",
+      "changed-partition-count" : "1",
+      "total-records" : "168",
+      "total-files-size" : "181507",
+      "total-data-files" : "168",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1776705412640113745-1-75e255ee-62c2-4074-a63b-47f531ef473a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 170,
+    "snapshot-id" : 7114354736798798177,
+    "parent-snapshot-id" : 1776705412640113745,
+    "timestamp-ms" : 1713293119650,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184519_00897_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1072",
+      "changed-partition-count" : "1",
+      "total-records" : "169",
+      "total-files-size" : "182579",
+      "total-data-files" : "169",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7114354736798798177-1-a945b02d-1b7e-4879-87d4-4f5970b03287.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 171,
+    "snapshot-id" : 4842125778613677041,
+    "parent-snapshot-id" : 7114354736798798177,
+    "timestamp-ms" : 1713293120018,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184519_00898_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "170",
+      "total-files-size" : "183660",
+      "total-data-files" : "170",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-4842125778613677041-1-39b5cc5b-147a-4146-a928-6787aa05d513.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 172,
+    "snapshot-id" : 8903855723848526741,
+    "parent-snapshot-id" : 4842125778613677041,
+    "timestamp-ms" : 1713293120319,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184520_00899_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "171",
+      "total-files-size" : "184749",
+      "total-data-files" : "171",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8903855723848526741-1-aab6c13f-adb7-4e77-a67d-86f9254d425c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 173,
+    "snapshot-id" : 6723265139625803936,
+    "parent-snapshot-id" : 8903855723848526741,
+    "timestamp-ms" : 1713293120634,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184520_00900_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1091",
+      "changed-partition-count" : "1",
+      "total-records" : "172",
+      "total-files-size" : "185840",
+      "total-data-files" : "172",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6723265139625803936-1-ac8ebed3-d834-4317-92b7-00cefa30050e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 174,
+    "snapshot-id" : 6832497937244911845,
+    "parent-snapshot-id" : 6723265139625803936,
+    "timestamp-ms" : 1713293120947,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184520_00901_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "173",
+      "total-files-size" : "186932",
+      "total-data-files" : "173",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6832497937244911845-1-230529ab-9117-4624-8da0-2e33bb606d6a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 175,
+    "snapshot-id" : 5249110674572536349,
+    "parent-snapshot-id" : 6832497937244911845,
+    "timestamp-ms" : 1713293121273,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184521_00902_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1077",
+      "changed-partition-count" : "1",
+      "total-records" : "174",
+      "total-files-size" : "188009",
+      "total-data-files" : "174",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5249110674572536349-1-8f3b9df8-7c5a-408f-8091-e485c4532a3b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 176,
+    "snapshot-id" : 3786981513135391907,
+    "parent-snapshot-id" : 5249110674572536349,
+    "timestamp-ms" : 1713293121572,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184521_00903_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1083",
+      "changed-partition-count" : "1",
+      "total-records" : "175",
+      "total-files-size" : "189092",
+      "total-data-files" : "175",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-3786981513135391907-1-de2d0caa-d640-43b8-a731-c63c2d526c31.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 177,
+    "snapshot-id" : 5872681743470307560,
+    "parent-snapshot-id" : 3786981513135391907,
+    "timestamp-ms" : 1713293121876,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184521_00904_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1071",
+      "changed-partition-count" : "1",
+      "total-records" : "176",
+      "total-files-size" : "190163",
+      "total-data-files" : "176",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5872681743470307560-1-9163b05b-e863-45b4-b760-95d9e433b5f5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 178,
+    "snapshot-id" : 8998589314866549203,
+    "parent-snapshot-id" : 5872681743470307560,
+    "timestamp-ms" : 1713293122174,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184522_00905_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "177",
+      "total-files-size" : "191244",
+      "total-data-files" : "177",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8998589314866549203-1-581fcbdb-ad56-4f85-8c50-f3fe4294661f.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 179,
+    "snapshot-id" : 6027737025742523765,
+    "parent-snapshot-id" : 8998589314866549203,
+    "timestamp-ms" : 1713293122512,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184522_00906_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1065",
+      "changed-partition-count" : "1",
+      "total-records" : "178",
+      "total-files-size" : "192309",
+      "total-data-files" : "178",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6027737025742523765-1-ec661afa-3efa-4436-9c83-b67241816aee.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 180,
+    "snapshot-id" : 8007586494238340517,
+    "parent-snapshot-id" : 6027737025742523765,
+    "timestamp-ms" : 1713293122823,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184522_00907_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1059",
+      "changed-partition-count" : "1",
+      "total-records" : "179",
+      "total-files-size" : "193368",
+      "total-data-files" : "179",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8007586494238340517-1-7a788030-a706-4f9f-a21c-b88ce851fe50.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 181,
+    "snapshot-id" : 1591057270258952001,
+    "parent-snapshot-id" : 8007586494238340517,
+    "timestamp-ms" : 1713293123145,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184523_00908_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1081",
+      "changed-partition-count" : "1",
+      "total-records" : "180",
+      "total-files-size" : "194449",
+      "total-data-files" : "180",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-1591057270258952001-1-224d72af-1ffa-418c-9541-fbc929d4a009.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 182,
+    "snapshot-id" : 7956539054884118513,
+    "parent-snapshot-id" : 1591057270258952001,
+    "timestamp-ms" : 1713293123483,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184523_00909_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1062",
+      "changed-partition-count" : "1",
+      "total-records" : "181",
+      "total-files-size" : "195511",
+      "total-data-files" : "181",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-7956539054884118513-1-757fb8ad-1236-463d-95a0-34b048d74279.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 183,
+    "snapshot-id" : 808512267947418693,
+    "parent-snapshot-id" : 7956539054884118513,
+    "timestamp-ms" : 1713293123885,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184523_00910_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1089",
+      "changed-partition-count" : "1",
+      "total-records" : "182",
+      "total-files-size" : "196600",
+      "total-data-files" : "182",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-808512267947418693-1-fce93b40-e5d2-4d41-aa9e-b213ed9ba4e8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 184,
+    "snapshot-id" : 6044133228812626166,
+    "parent-snapshot-id" : 808512267947418693,
+    "timestamp-ms" : 1713293124247,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184524_00911_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1061",
+      "changed-partition-count" : "1",
+      "total-records" : "183",
+      "total-files-size" : "197661",
+      "total-data-files" : "183",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6044133228812626166-1-b952f062-96c1-49fb-a4e0-3d6267626839.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 185,
+    "snapshot-id" : 6232297522679418934,
+    "parent-snapshot-id" : 6044133228812626166,
+    "timestamp-ms" : 1713293124586,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184524_00912_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1088",
+      "changed-partition-count" : "1",
+      "total-records" : "184",
+      "total-files-size" : "198749",
+      "total-data-files" : "184",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-6232297522679418934-1-b48f4f63-97ce-4be2-b3ee-6e9d1971daf5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 186,
+    "snapshot-id" : 5458264022867017855,
+    "parent-snapshot-id" : 6232297522679418934,
+    "timestamp-ms" : 1713293125011,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184524_00913_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1120",
+      "changed-partition-count" : "1",
+      "total-records" : "185",
+      "total-files-size" : "199869",
+      "total-data-files" : "185",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5458264022867017855-1-f01bb387-a7b8-401d-906b-20dfed540567.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 187,
+    "snapshot-id" : 8932839483431989458,
+    "parent-snapshot-id" : 5458264022867017855,
+    "timestamp-ms" : 1713293125424,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184525_00914_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1067",
+      "changed-partition-count" : "1",
+      "total-records" : "186",
+      "total-files-size" : "200936",
+      "total-data-files" : "186",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-8932839483431989458-1-df86a642-7658-4102-abfa-fb1291a0005c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 188,
+    "snapshot-id" : 475943228567012609,
+    "parent-snapshot-id" : 8932839483431989458,
+    "timestamp-ms" : 1713293125756,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184525_00915_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1088",
+      "changed-partition-count" : "1",
+      "total-records" : "187",
+      "total-files-size" : "202024",
+      "total-data-files" : "187",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-475943228567012609-1-d0836174-5d9b-4de4-bf4e-291c18f39c4d.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 189,
+    "snapshot-id" : 5285343259028700341,
+    "parent-snapshot-id" : 475943228567012609,
+    "timestamp-ms" : 1713293126105,
+    "summary" : {
+      "operation" : "append",
+      "trino_query_id" : "20240416_184526_00916_wjb43",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1092",
+      "changed-partition-count" : "1",
+      "total-records" : "188",
+      "total-files-size" : "203116",
+      "total-data-files" : "188",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/snap-5285343259028700341-1-8e933a43-d170-4ae8-8518-c1d7d537b71f.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1713292961225,
+    "snapshot-id" : 1018499920617992976
+  }, {
+    "timestamp-ms" : 1713293065021,
+    "snapshot-id" : 1193818048709547641
+  }, {
+    "timestamp-ms" : 1713293065655,
+    "snapshot-id" : 6734580166110044015
+  }, {
+    "timestamp-ms" : 1713293066064,
+    "snapshot-id" : 1580299008343533797
+  }, {
+    "timestamp-ms" : 1713293066463,
+    "snapshot-id" : 7855553667464520672
+  }, {
+    "timestamp-ms" : 1713293066823,
+    "snapshot-id" : 6643102181981588087
+  }, {
+    "timestamp-ms" : 1713293067185,
+    "snapshot-id" : 8406462510238664671
+  }, {
+    "timestamp-ms" : 1713293067538,
+    "snapshot-id" : 8934439150879522710
+  }, {
+    "timestamp-ms" : 1713293067899,
+    "snapshot-id" : 2644096561256195625
+  }, {
+    "timestamp-ms" : 1713293068243,
+    "snapshot-id" : 5555472780284756244
+  }, {
+    "timestamp-ms" : 1713293068569,
+    "snapshot-id" : 8380450468495305402
+  }, {
+    "timestamp-ms" : 1713293068913,
+    "snapshot-id" : 4207623317293696589
+  }, {
+    "timestamp-ms" : 1713293069211,
+    "snapshot-id" : 2992483551351144327
+  }, {
+    "timestamp-ms" : 1713293069532,
+    "snapshot-id" : 3026513830348477081
+  }, {
+    "timestamp-ms" : 1713293069857,
+    "snapshot-id" : 2568517779615546787
+  }, {
+    "timestamp-ms" : 1713293070157,
+    "snapshot-id" : 3670247595614228689
+  }, {
+    "timestamp-ms" : 1713293070476,
+    "snapshot-id" : 4472056076266944492
+  }, {
+    "timestamp-ms" : 1713293070782,
+    "snapshot-id" : 1800674596819091198
+  }, {
+    "timestamp-ms" : 1713293071120,
+    "snapshot-id" : 7420840834950679504
+  }, {
+    "timestamp-ms" : 1713293071431,
+    "snapshot-id" : 3092531462824618423
+  }, {
+    "timestamp-ms" : 1713293071768,
+    "snapshot-id" : 1080889349134780178
+  }, {
+    "timestamp-ms" : 1713293072102,
+    "snapshot-id" : 7682518122977215027
+  }, {
+    "timestamp-ms" : 1713293072491,
+    "snapshot-id" : 2203847136389016253
+  }, {
+    "timestamp-ms" : 1713293072807,
+    "snapshot-id" : 8085553422275934031
+  }, {
+    "timestamp-ms" : 1713293073159,
+    "snapshot-id" : 2470175918665997931
+  }, {
+    "timestamp-ms" : 1713293073512,
+    "snapshot-id" : 5902750166192338439
+  }, {
+    "timestamp-ms" : 1713293073899,
+    "snapshot-id" : 4236601344956616746
+  }, {
+    "timestamp-ms" : 1713293074221,
+    "snapshot-id" : 2865784645907522081
+  }, {
+    "timestamp-ms" : 1713293074548,
+    "snapshot-id" : 8113834575874283507
+  }, {
+    "timestamp-ms" : 1713293074863,
+    "snapshot-id" : 7706060334792741780
+  }, {
+    "timestamp-ms" : 1713293075225,
+    "snapshot-id" : 1061152630713100782
+  }, {
+    "timestamp-ms" : 1713293075617,
+    "snapshot-id" : 4463212531742167867
+  }, {
+    "timestamp-ms" : 1713293075961,
+    "snapshot-id" : 5807523182131438472
+  }, {
+    "timestamp-ms" : 1713293076298,
+    "snapshot-id" : 2034996747086170544
+  }, {
+    "timestamp-ms" : 1713293076645,
+    "snapshot-id" : 6492368732764514159
+  }, {
+    "timestamp-ms" : 1713293076993,
+    "snapshot-id" : 989788752585645288
+  }, {
+    "timestamp-ms" : 1713293077309,
+    "snapshot-id" : 5184858335157474210
+  }, {
+    "timestamp-ms" : 1713293077657,
+    "snapshot-id" : 3743612295562995018
+  }, {
+    "timestamp-ms" : 1713293077990,
+    "snapshot-id" : 5162423013547593698
+  }, {
+    "timestamp-ms" : 1713293078288,
+    "snapshot-id" : 3463485524251069816
+  }, {
+    "timestamp-ms" : 1713293078575,
+    "snapshot-id" : 3680974806291556777
+  }, {
+    "timestamp-ms" : 1713293078875,
+    "snapshot-id" : 6172644351858674728
+  }, {
+    "timestamp-ms" : 1713293079143,
+    "snapshot-id" : 256392253463793288
+  }, {
+    "timestamp-ms" : 1713293079428,
+    "snapshot-id" : 2847843325107520831
+  }, {
+    "timestamp-ms" : 1713293079741,
+    "snapshot-id" : 5674621679344269281
+  }, {
+    "timestamp-ms" : 1713293080029,
+    "snapshot-id" : 901305689445438710
+  }, {
+    "timestamp-ms" : 1713293080307,
+    "snapshot-id" : 9076609904676111174
+  }, {
+    "timestamp-ms" : 1713293080630,
+    "snapshot-id" : 9188880910148869639
+  }, {
+    "timestamp-ms" : 1713293080947,
+    "snapshot-id" : 774571533382835089
+  }, {
+    "timestamp-ms" : 1713293081246,
+    "snapshot-id" : 7327264855704335191
+  }, {
+    "timestamp-ms" : 1713293081580,
+    "snapshot-id" : 6388946862807564689
+  }, {
+    "timestamp-ms" : 1713293081879,
+    "snapshot-id" : 8713539869621589687
+  }, {
+    "timestamp-ms" : 1713293082162,
+    "snapshot-id" : 6390218921855694125
+  }, {
+    "timestamp-ms" : 1713293082456,
+    "snapshot-id" : 5686878997606611341
+  }, {
+    "timestamp-ms" : 1713293082751,
+    "snapshot-id" : 1276243844663790145
+  }, {
+    "timestamp-ms" : 1713293083049,
+    "snapshot-id" : 2981386797757751271
+  }, {
+    "timestamp-ms" : 1713293083342,
+    "snapshot-id" : 2686352517392012543
+  }, {
+    "timestamp-ms" : 1713293083622,
+    "snapshot-id" : 8799564332465013576
+  }, {
+    "timestamp-ms" : 1713293083912,
+    "snapshot-id" : 8472913559653274763
+  }, {
+    "timestamp-ms" : 1713293084207,
+    "snapshot-id" : 1223850937999512102
+  }, {
+    "timestamp-ms" : 1713293084544,
+    "snapshot-id" : 2985497180473297017
+  }, {
+    "timestamp-ms" : 1713293084829,
+    "snapshot-id" : 6509579991068769270
+  }, {
+    "timestamp-ms" : 1713293085229,
+    "snapshot-id" : 8564422884386241582
+  }, {
+    "timestamp-ms" : 1713293085521,
+    "snapshot-id" : 8586616403630535655
+  }, {
+    "timestamp-ms" : 1713293085846,
+    "snapshot-id" : 141384098832851243
+  }, {
+    "timestamp-ms" : 1713293086178,
+    "snapshot-id" : 2596092646158889539
+  }, {
+    "timestamp-ms" : 1713293086469,
+    "snapshot-id" : 7215702236136551660
+  }, {
+    "timestamp-ms" : 1713293086861,
+    "snapshot-id" : 9118876006466069136
+  }, {
+    "timestamp-ms" : 1713293087170,
+    "snapshot-id" : 4980583149448846018
+  }, {
+    "timestamp-ms" : 1713293087445,
+    "snapshot-id" : 6070180131022635357
+  }, {
+    "timestamp-ms" : 1713293087727,
+    "snapshot-id" : 3739119166526988574
+  }, {
+    "timestamp-ms" : 1713293088028,
+    "snapshot-id" : 2411501259587424168
+  }, {
+    "timestamp-ms" : 1713293088349,
+    "snapshot-id" : 9065882289217307631
+  }, {
+    "timestamp-ms" : 1713293088640,
+    "snapshot-id" : 3963272272285812710
+  }, {
+    "timestamp-ms" : 1713293088946,
+    "snapshot-id" : 881145263172278079
+  }, {
+    "timestamp-ms" : 1713293089242,
+    "snapshot-id" : 1294766330188623317
+  }, {
+    "timestamp-ms" : 1713293089522,
+    "snapshot-id" : 2168067414807988197
+  }, {
+    "timestamp-ms" : 1713293089800,
+    "snapshot-id" : 8278058154614315228
+  }, {
+    "timestamp-ms" : 1713293090085,
+    "snapshot-id" : 4660088306784227738
+  }, {
+    "timestamp-ms" : 1713293090364,
+    "snapshot-id" : 419139679753180054
+  }, {
+    "timestamp-ms" : 1713293090662,
+    "snapshot-id" : 646294372158598056
+  }, {
+    "timestamp-ms" : 1713293090960,
+    "snapshot-id" : 4403881016586755191
+  }, {
+    "timestamp-ms" : 1713293091256,
+    "snapshot-id" : 111062722330379421
+  }, {
+    "timestamp-ms" : 1713293091527,
+    "snapshot-id" : 5554020601518358094
+  }, {
+    "timestamp-ms" : 1713293091845,
+    "snapshot-id" : 5510359978154220302
+  }, {
+    "timestamp-ms" : 1713293092125,
+    "snapshot-id" : 6991430765856857391
+  }, {
+    "timestamp-ms" : 1713293092419,
+    "snapshot-id" : 8875041649285136544
+  }, {
+    "timestamp-ms" : 1713293092724,
+    "snapshot-id" : 1926158917687330800
+  }, {
+    "timestamp-ms" : 1713293093007,
+    "snapshot-id" : 7654552902295437687
+  }, {
+    "timestamp-ms" : 1713293093307,
+    "snapshot-id" : 4513305275826095582
+  }, {
+    "timestamp-ms" : 1713293093594,
+    "snapshot-id" : 1674800397749668774
+  }, {
+    "timestamp-ms" : 1713293093897,
+    "snapshot-id" : 4361987307161610894
+  }, {
+    "timestamp-ms" : 1713293094180,
+    "snapshot-id" : 8620720287181647399
+  }, {
+    "timestamp-ms" : 1713293094482,
+    "snapshot-id" : 7821390787105300915
+  }, {
+    "timestamp-ms" : 1713293094798,
+    "snapshot-id" : 4011440273660866663
+  }, {
+    "timestamp-ms" : 1713293095133,
+    "snapshot-id" : 4414829424204245171
+  }, {
+    "timestamp-ms" : 1713293095433,
+    "snapshot-id" : 7640876874980295231
+  }, {
+    "timestamp-ms" : 1713293095751,
+    "snapshot-id" : 8385047363845258262
+  }, {
+    "timestamp-ms" : 1713293096071,
+    "snapshot-id" : 5264362330637096180
+  }, {
+    "timestamp-ms" : 1713293096365,
+    "snapshot-id" : 6942452796861607875
+  }, {
+    "timestamp-ms" : 1713293097429,
+    "snapshot-id" : 5281413822471227329
+  }, {
+    "timestamp-ms" : 1713293097805,
+    "snapshot-id" : 2641148671690785741
+  }, {
+    "timestamp-ms" : 1713293098092,
+    "snapshot-id" : 3190520619014558300
+  }, {
+    "timestamp-ms" : 1713293098374,
+    "snapshot-id" : 2120694460777916104
+  }, {
+    "timestamp-ms" : 1713293098672,
+    "snapshot-id" : 7121278741319061296
+  }, {
+    "timestamp-ms" : 1713293098959,
+    "snapshot-id" : 4242572606563075509
+  }, {
+    "timestamp-ms" : 1713293099251,
+    "snapshot-id" : 4504093714641962413
+  }, {
+    "timestamp-ms" : 1713293099576,
+    "snapshot-id" : 8032872394536321889
+  }, {
+    "timestamp-ms" : 1713293099878,
+    "snapshot-id" : 1168230105025033808
+  }, {
+    "timestamp-ms" : 1713293100165,
+    "snapshot-id" : 715175512198562633
+  }, {
+    "timestamp-ms" : 1713293100448,
+    "snapshot-id" : 5412145207346179669
+  }, {
+    "timestamp-ms" : 1713293100742,
+    "snapshot-id" : 6389404711700532012
+  }, {
+    "timestamp-ms" : 1713293101021,
+    "snapshot-id" : 7790548763516903965
+  }, {
+    "timestamp-ms" : 1713293101327,
+    "snapshot-id" : 5345772835708792868
+  }, {
+    "timestamp-ms" : 1713293101638,
+    "snapshot-id" : 1085491684158049073
+  }, {
+    "timestamp-ms" : 1713293101929,
+    "snapshot-id" : 7932757467915365236
+  }, {
+    "timestamp-ms" : 1713293102230,
+    "snapshot-id" : 5976182770860045762
+  }, {
+    "timestamp-ms" : 1713293102548,
+    "snapshot-id" : 1360424237294857167
+  }, {
+    "timestamp-ms" : 1713293102867,
+    "snapshot-id" : 8752586533802013915
+  }, {
+    "timestamp-ms" : 1713293103165,
+    "snapshot-id" : 3071828868882931890
+  }, {
+    "timestamp-ms" : 1713293103485,
+    "snapshot-id" : 1562575472497527069
+  }, {
+    "timestamp-ms" : 1713293103790,
+    "snapshot-id" : 7357039388924071865
+  }, {
+    "timestamp-ms" : 1713293104123,
+    "snapshot-id" : 3909135845310446566
+  }, {
+    "timestamp-ms" : 1713293104515,
+    "snapshot-id" : 7709303801876325778
+  }, {
+    "timestamp-ms" : 1713293104874,
+    "snapshot-id" : 3242586309111476286
+  }, {
+    "timestamp-ms" : 1713293105382,
+    "snapshot-id" : 1901893444903918265
+  }, {
+    "timestamp-ms" : 1713293105781,
+    "snapshot-id" : 6594450320229182887
+  }, {
+    "timestamp-ms" : 1713293106137,
+    "snapshot-id" : 2247136796225229339
+  }, {
+    "timestamp-ms" : 1713293106478,
+    "snapshot-id" : 9087990668431694905
+  }, {
+    "timestamp-ms" : 1713293106790,
+    "snapshot-id" : 7118217829926299737
+  }, {
+    "timestamp-ms" : 1713293107083,
+    "snapshot-id" : 1573017458180459283
+  }, {
+    "timestamp-ms" : 1713293107425,
+    "snapshot-id" : 9032926365699521865
+  }, {
+    "timestamp-ms" : 1713293107743,
+    "snapshot-id" : 5461527675525950518
+  }, {
+    "timestamp-ms" : 1713293108049,
+    "snapshot-id" : 7915832020320627084
+  }, {
+    "timestamp-ms" : 1713293108353,
+    "snapshot-id" : 8537225702872323929
+  }, {
+    "timestamp-ms" : 1713293108667,
+    "snapshot-id" : 7417939662925883112
+  }, {
+    "timestamp-ms" : 1713293108994,
+    "snapshot-id" : 8447786551586226938
+  }, {
+    "timestamp-ms" : 1713293109313,
+    "snapshot-id" : 4187913161860505185
+  }, {
+    "timestamp-ms" : 1713293109606,
+    "snapshot-id" : 1809334767434805724
+  }, {
+    "timestamp-ms" : 1713293109951,
+    "snapshot-id" : 164304530993468548
+  }, {
+    "timestamp-ms" : 1713293110255,
+    "snapshot-id" : 6905821445745765326
+  }, {
+    "timestamp-ms" : 1713293110556,
+    "snapshot-id" : 8451908083588695750
+  }, {
+    "timestamp-ms" : 1713293110888,
+    "snapshot-id" : 7547784055084908821
+  }, {
+    "timestamp-ms" : 1713293111192,
+    "snapshot-id" : 5933237668638510315
+  }, {
+    "timestamp-ms" : 1713293111555,
+    "snapshot-id" : 7444217625469835288
+  }, {
+    "timestamp-ms" : 1713293111874,
+    "snapshot-id" : 4694859319802608201
+  }, {
+    "timestamp-ms" : 1713293112201,
+    "snapshot-id" : 6283107601794364873
+  }, {
+    "timestamp-ms" : 1713293112516,
+    "snapshot-id" : 1242843938618123387
+  }, {
+    "timestamp-ms" : 1713293112833,
+    "snapshot-id" : 2474723470262602644
+  }, {
+    "timestamp-ms" : 1713293113148,
+    "snapshot-id" : 6501981136315395907
+  }, {
+    "timestamp-ms" : 1713293113454,
+    "snapshot-id" : 3811667278383303263
+  }, {
+    "timestamp-ms" : 1713293113756,
+    "snapshot-id" : 496958819937050810
+  }, {
+    "timestamp-ms" : 1713293114068,
+    "snapshot-id" : 8850240770177311441
+  }, {
+    "timestamp-ms" : 1713293114393,
+    "snapshot-id" : 7512731572644635527
+  }, {
+    "timestamp-ms" : 1713293114729,
+    "snapshot-id" : 9022981935572571488
+  }, {
+    "timestamp-ms" : 1713293115096,
+    "snapshot-id" : 253404203535511288
+  }, {
+    "timestamp-ms" : 1713293115408,
+    "snapshot-id" : 755051105496668432
+  }, {
+    "timestamp-ms" : 1713293115777,
+    "snapshot-id" : 3644617166782502376
+  }, {
+    "timestamp-ms" : 1713293116107,
+    "snapshot-id" : 7494356050173109328
+  }, {
+    "timestamp-ms" : 1713293116465,
+    "snapshot-id" : 2183413493155227913
+  }, {
+    "timestamp-ms" : 1713293116788,
+    "snapshot-id" : 2962970504250647605
+  }, {
+    "timestamp-ms" : 1713293117110,
+    "snapshot-id" : 2897758321205569336
+  }, {
+    "timestamp-ms" : 1713293117452,
+    "snapshot-id" : 7517043118606870965
+  }, {
+    "timestamp-ms" : 1713293117772,
+    "snapshot-id" : 5146765709018626751
+  }, {
+    "timestamp-ms" : 1713293118082,
+    "snapshot-id" : 6516376558267076826
+  }, {
+    "timestamp-ms" : 1713293118405,
+    "snapshot-id" : 6422440451081651097
+  }, {
+    "timestamp-ms" : 1713293118713,
+    "snapshot-id" : 7460782620649281509
+  }, {
+    "timestamp-ms" : 1713293119038,
+    "snapshot-id" : 7645003715275268481
+  }, {
+    "timestamp-ms" : 1713293119350,
+    "snapshot-id" : 1776705412640113745
+  }, {
+    "timestamp-ms" : 1713293119650,
+    "snapshot-id" : 7114354736798798177
+  }, {
+    "timestamp-ms" : 1713293120018,
+    "snapshot-id" : 4842125778613677041
+  }, {
+    "timestamp-ms" : 1713293120319,
+    "snapshot-id" : 8903855723848526741
+  }, {
+    "timestamp-ms" : 1713293120634,
+    "snapshot-id" : 6723265139625803936
+  }, {
+    "timestamp-ms" : 1713293120947,
+    "snapshot-id" : 6832497937244911845
+  }, {
+    "timestamp-ms" : 1713293121273,
+    "snapshot-id" : 5249110674572536349
+  }, {
+    "timestamp-ms" : 1713293121572,
+    "snapshot-id" : 3786981513135391907
+  }, {
+    "timestamp-ms" : 1713293121876,
+    "snapshot-id" : 5872681743470307560
+  }, {
+    "timestamp-ms" : 1713293122174,
+    "snapshot-id" : 8998589314866549203
+  }, {
+    "timestamp-ms" : 1713293122512,
+    "snapshot-id" : 6027737025742523765
+  }, {
+    "timestamp-ms" : 1713293122823,
+    "snapshot-id" : 8007586494238340517
+  }, {
+    "timestamp-ms" : 1713293123145,
+    "snapshot-id" : 1591057270258952001
+  }, {
+    "timestamp-ms" : 1713293123483,
+    "snapshot-id" : 7956539054884118513
+  }, {
+    "timestamp-ms" : 1713293123885,
+    "snapshot-id" : 808512267947418693
+  }, {
+    "timestamp-ms" : 1713293124247,
+    "snapshot-id" : 6044133228812626166
+  }, {
+    "timestamp-ms" : 1713293124586,
+    "snapshot-id" : 6232297522679418934
+  }, {
+    "timestamp-ms" : 1713293125011,
+    "snapshot-id" : 5458264022867017855
+  }, {
+    "timestamp-ms" : 1713293125424,
+    "snapshot-id" : 8932839483431989458
+  }, {
+    "timestamp-ms" : 1713293125756,
+    "snapshot-id" : 475943228567012609
+  }, {
+    "timestamp-ms" : 1713293126105,
+    "snapshot-id" : 5285343259028700341
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1713293093007,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00088-b080a47b-f024-4540-a5c9-8b8502006cc7.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293093307,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00089-38a19231-bf5c-430c-a188-83fcb337f8ba.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293093594,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00090-aed86eb4-7eab-42f8-9d18-36c3d6459050.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293093897,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00091-aeb058ed-ce38-4cb3-a5a8-358a1fac440c.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293094180,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00092-88f2faa6-8aa4-41d4-9bdf-a91b10443ecf.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293094482,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00093-1e4ca6be-d171-4f8e-b88b-c2a15922a64a.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293094798,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00094-b80cee49-7987-4e15-9af3-572593593d78.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293095133,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00095-6827e0e2-5722-4125-8033-3e410027f24a.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293095433,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00096-9f7ec097-5798-44a9-b97b-5986bc52245f.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293095751,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00097-049d2a4a-218e-4211-932f-6ffc9daaff27.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293096071,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00098-3e2d4c6d-c939-4ff8-9ac9-7508c80b356e.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293096365,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00099-31d0c672-84be-4a76-89cb-6a7de03be4e3.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293097429,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00100-dcf83b29-11b3-406d-82c1-cec446db80e9.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293097805,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00101-913246c2-72d4-42a4-96ad-80ab80c9c3d9.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293098092,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00102-182a68f5-3991-4dab-b7a6-52a758084b42.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293098374,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00103-da89c4e0-1f1b-4218-9b4c-69c720c5fa13.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293098672,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00104-5fd2bf74-df45-4e78-85cb-b7d3674ca067.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293098959,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00105-31b497c1-ac18-4ae2-b56c-fe152f8371fb.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293099251,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00106-299302af-8680-424f-9334-3315043f8fcd.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293099576,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00107-83eae60c-befc-4024-9456-4e2efc493aff.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293099878,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00108-a8ed0dee-6138-46fc-972e-ce8e417bcaa9.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293100165,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00109-4213ef41-bd08-4e02-b422-f6f41afffacd.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293100448,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00110-43c05248-b14b-4df4-a6bd-06ee82010413.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293100742,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00111-4c630cf6-1ec6-4dc1-9ecf-591d29b827c4.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293101021,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00112-a533c04c-7230-4086-8646-d36199b03116.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293101327,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00113-99724ba0-dd0d-42e6-a2e4-efec07556a50.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293101638,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00114-d7ecdab0-a71f-448a-9f90-8d8aac5aded1.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293101929,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00115-9dc36310-518e-41d8-a67c-462d910a492b.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293102230,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00116-97e8b02a-69c2-44d0-8031-fb0eebedbcd5.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293102548,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00117-918100f1-ef08-413f-b6a4-3f6b08913143.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293102867,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00118-ab7de000-d00d-426d-86ce-ade004631bdc.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293103165,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00119-5b269fc6-1625-45a8-b74b-175134bcce74.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293103485,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00120-325ab360-062c-4ace-9530-6aa579f7c385.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293103790,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00121-6d675902-412b-479d-a8b2-2748d61094b6.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293104123,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00122-ea0905fa-286c-4b35-b9cd-5e4b7bb64d80.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293104515,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00123-86af8589-18ec-473d-98a5-de1d57d4d912.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293104874,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00124-879371d3-08a7-46b3-be65-720ac4b94f80.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293105382,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00125-be63e4d5-fb8c-4c3c-a4c6-21c569f0cb85.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293105781,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00126-920c2402-6e8f-4f46-b6ce-4739f7c56606.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293106137,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00127-a1c86a1d-56a9-41bc-b095-b3196b0dc2bf.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293106478,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00128-ff220576-c795-44d1-b4b0-8cf7962e878f.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293106790,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00129-a87e8f00-61e2-451b-8660-e0e15d76bef0.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293107083,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00130-8ed942d0-1913-4fe1-8420-97c9828ea1fa.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293107425,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00131-cc910b43-f6a2-4749-885d-ea079cd94efe.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293107743,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00132-b4026c08-649b-4a9d-841e-3220c811dd92.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293108049,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00133-4098f678-277b-47dd-acd3-e279bea7ae23.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293108353,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00134-239324aa-c43e-40f8-9a61-8152ceab3028.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293108667,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00135-1cf20273-b4d4-468e-8777-279370ed9afb.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293108994,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00136-d7b4d29d-c6bd-4f7f-ab73-72cee2745bdb.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293109313,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00137-9bf7099d-a819-4bba-9036-d3dc8c117498.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293109606,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00138-e9acb233-46ef-47f5-aaf4-91fe0cb210a2.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293109951,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00139-632cdec4-c9c5-4edc-9409-8ec7bea1a51c.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293110255,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00140-8e184f92-ce72-48df-b203-77440a270bdb.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293110556,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00141-13560c2c-da37-4228-bfdf-540e8eac2444.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293110888,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00142-84aeda31-5a21-4ca7-8bc0-226bd4a6e3cf.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293111192,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00143-2e1e39c0-1a73-417e-a775-7793cd4b909f.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293111555,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00144-d3a7561d-589a-4209-941c-823c67e83ade.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293111874,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00145-84934451-be9d-4ae2-a342-47789f58d61d.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293112201,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00146-8825ed92-a666-4626-90b6-3c83159c0440.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293112516,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00147-2bbad21f-5dd4-46c1-ba47-458907e219e4.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293112833,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00148-5ef8b5a4-405f-4023-a2da-d3f9db42e6ae.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293113148,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00149-0bd402d2-3fa8-4c1e-bee9-fb3dcf9b7073.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293113454,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00150-b241c715-3fe7-49f2-8366-47556469c404.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293113756,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00151-8a43da01-8533-486e-be71-6821df1f3a18.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293114068,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00152-ef8d71b7-07f7-4c94-8129-cc7fd3543ae4.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293114393,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00153-ce352287-ba72-4a8f-9ceb-d586cb7a3a5d.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293114729,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00154-322f931f-64a0-4365-aae4-1ae3fff0c7a2.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293115096,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00155-03435b8f-afee-4705-a182-1449bce4379b.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293115408,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00156-426abbd7-336c-4600-bd53-5bf1700e6555.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293115777,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00157-8e6db22d-a7d4-4f6d-b06b-df738d6ec28e.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293116107,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00158-13c584f8-c966-4d94-ad05-72fe02aec9c9.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293116465,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00159-cba04b5b-3e02-4d20-b3de-f05bca6e40a7.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293116788,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00160-fb3dacb1-0f71-499f-9782-e306f2795725.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293117110,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00161-9cc44117-2a09-4a49-a7cd-20147dab9678.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293117452,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00162-686f5a8e-3265-4bda-a256-6d741dece589.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293117772,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00163-864e027b-e289-4cb1-ab5c-72bd211be67f.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293118082,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00164-79cc919b-da2b-4ecb-bc61-1c41cb311281.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293118405,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00165-fe9bd279-8ef6-4559-b645-7a6275a2aaca.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293118713,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00166-a661929c-c9a5-45bd-a839-5ec125b00c2c.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293119038,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00167-e1aae809-4c82-4529-aca1-fb821781f204.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293119350,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00168-f65939ff-263f-4feb-9666-7789349dc6fc.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293119650,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00169-27f9969e-0ca7-4c5a-8f2e-47225bd14859.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293120018,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00170-1ee43faa-7d0c-446a-baa1-24ae5231f399.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293120319,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00171-10b09e36-a0cb-4a4c-9f1c-89f97c8117f4.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293120634,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00172-2a2b4524-5946-423e-ab69-5b979a1f02e5.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293120947,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00173-cb4cbad8-03f5-428d-bc2f-f834f6d4c7d2.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293121273,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00174-d512b6b0-d8f2-4b92-96f8-6937d0b255bf.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293121572,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00175-b26a3a92-63b0-42d7-810c-accc2a692689.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293121876,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00176-1d54b4d1-9bd3-4f96-9056-d84a2185e3a5.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293122174,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00177-5366b613-9824-4316-9ea3-7da00c871697.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293122512,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00178-ce113412-d6f1-40bc-9273-4a002c51c4d8.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293122823,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00179-0bec9e22-0bd4-4218-9e77-5c8cfa25ac1a.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293123145,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00180-02b05835-f68c-4cf2-a552-a362b6e40db7.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293123483,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00181-ed765ab5-9466-41cc-83e2-f2aa4363873a.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293123885,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00182-004ea5d0-1e64-436b-be3b-896778f8b7b8.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293124247,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00183-f1ad655d-53f2-4269-a2a1-a04018f2786c.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293124586,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00184-a2bcea21-7132-4767-9779-a49168c5aa0f.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293125011,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00185-a1e936d7-320a-4f39-b442-8310ac1c7b35.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293125424,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00186-4de35b38-6df2-4f03-83a3-953402a5696b.metadata.json"
+  }, {
+    "timestamp-ms" : 1713293125756,
+    "metadata-file" : "s3a://lakehouse/shipping_report/paper_note-560cf7d42bb8484bb791ce75007b6976/metadata/00187-a96d9bee-e714-4384-9c3f-bbf94586fe82.metadata.json"
+  } ]
+}

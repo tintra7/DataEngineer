@@ -62,10 +62,11 @@ def read_from_database(table):
     #                     "client_kwargs": {"endpoint_url": "http://localhost:9000/"}
     #                 }).drop(['year', 'month', 'day'], axis=1)
     
+    # stt = max(df['stt'])
     stt = 0
     print("Reading data from", table)
     if table == "Account":
-        columns = ["id", "firstname", "lastname", "email", "phone", "created", "stt"]
+        columns = ["id", "firstname", "lastname", "email", "phone", "created", "stt", "staffid", "storeid"]
         query = 'SELECT * FROM public."Account" WHERE stt > {stt}'.format(stt=stt)
         return sql_to_dataframe(conn, query=query, columns=columns)
 
@@ -90,7 +91,7 @@ def read_from_database(table):
         return sql_to_dataframe(conn, query=query, columns=columns)
 
     if table == "Shipping":
-        columns = ["id", "accepted_at", "boarded_at", "picked_up_at", "completed_at", "cancelled_at", "charged", "serviceid", "order_id", "stt"]
+        columns = ["id", "accepted_at", "boarded_at", "picked_up_at", "completed_at", "cancelled_at", "charged", "serviceid", "order_id", "stt", 'shiptype']
         query = 'SELECT * FROM public."Shipping" WHERE stt > {stt}'.format(stt=stt)
         return sql_to_dataframe(conn, query=query, columns=columns)
 
