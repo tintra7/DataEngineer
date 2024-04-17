@@ -23,8 +23,6 @@ MINIO_SECRET_KEY = os.environ.get("MINIO_SECRET_KEY")
 BUCKET_NAME = "datalake"
 ENDPOINT = "localhost:9000"
 
-minio_bucket = "datalake"
-
 minio_client = Minio(ENDPOINT,
                       access_key=MINIO_ACCESS_KEY,
                       secret_key=MINIO_SECRET_KEY,
