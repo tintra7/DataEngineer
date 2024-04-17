@@ -16,5 +16,6 @@ If this is your first time run this project, please set stt = 0 and connect the 
 
 ```bash
 python loader.py
+python load_image.py
 python transformation.py
 ```
