@@ -14,4 +14,7 @@ postgres.txt
 .ipynb_checkpoints
 
 *.ipynb
+
 \ipynb_checkpoints
+
+\minio-data
