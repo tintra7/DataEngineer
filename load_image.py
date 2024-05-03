@@ -42,7 +42,8 @@ for i, image_url in enumerate(image_urls):
     month = str(date.today().month)
     day = str(date.today().day)
     path = "/PaperNote/" + f"year={year}/month={month}/day={day}/"
-    name = path + f"paper_note{i}.png"
+
+    name = path + image_url.split('/')[-1]
     # found = minio_client.bucket_exists(bucket_name=BUCKET_NAME)
     # if not found:
     #     minio_client.make_bucket(path)

@@ -59,17 +59,23 @@ def parse_papernote(
         month=str(date.today().month), 
         day=str(date.today().day)
     ):
-    list_obj = minio_client.list_objects("datalake", prefix=f"PaperNote/year={year},month={month},day={day}", recursive=True)
+    list_obj = minio_client.list_objects("datalake", prefix=f"PaperNote/year={year}/month={month}/day={day}", recursive=True)
     dateTime_templates = ['Accepted at', 'Completed at', 'Boarded at', 'Picked up at']
     customer_templates = ['Name', 'Address', 'Phone', 'Email']
     order_templates = ['Name', 'Price', 'Trip type']
     staff_templates = ['Name', 'Phone', 'Email', "StaffID", "Store"]
     columns = dateTime_templates + customer_templates + order_templates + staff_templates
     df = pd.DataFrame(columns=columns)
+    model = Model()
+    count = 0
     for obj in list_obj:
+        if count == 5:
+            break
+        count += 1
         img = obj.object_name
+        print(img)
         response = minio_client.get_object(BUCKET_NAME, img)
-        model = Model()
+        
         model.load_image(response=response)
         json = model.detect_ocr()
         json_flat = {}
@@ -89,7 +95,23 @@ df_shipping = read_data(table="Shipping")
 df_shippingservice = read_data(table="ShippingService")
 df_papernote = parse_papernote()
 
+def transform_papernote(df_papernote):
+    dateTime_templates = ['Accepted at', 'Completed at', 'Boarded at', 'Picked up at']
+    for i in dateTime_templates:
+        df_papernote[i] = pd.to_datetime(df_papernote[i])
+    df_papernote = df_papernote.drop(['Address', 'Phone', 'Email', 'ordName', 'staffName', 'Phone', 'Email', 'cusName'], axis=1)
+    df_papernote["ShipType"] = df_papernote['Trip type'].apply(lambda x: 0 if x == "Round" else 1)
+    df_papernote = df_papernote.drop("Trip type", axis=1)
+    df_papernote.rename(columns={'Accepted at': 'accepted_at', 
+                             'Completed at': 'boarded_at',
+                             'Boarded at': 'picked_up_at',
+                             'Picked up at': 'completed_at',
+                             'ShipType': 'shiptype',
+                             "Price": "price",
+                             'Store': "storename"}, inplace=True)
+    return df_papernote
 
+df_papernote = transform_papernote(df_papernote.copy())
 
 def create_cancel_report(cur):
     df = df_shipping.merge(df_shippingservice, how="inner", left_on="serviceid", right_on="id")
@@ -100,6 +122,7 @@ def create_cancel_report(cur):
     df = df.dropna(axis=0)
     df.cancelled_at = df['cancelled_at'].dt.time
     df = df.drop("stt", axis=1)
+    cur.execute("DROP TABLE iceberg.shipping_report.cancel_report")
     query = """CREATE TABLE IF NOT EXISTS iceberg.shipping_report.cancel_report(
     order_id varchar,
     cancelled_at time(6),
@@ -124,6 +147,7 @@ def create_cancel_report(cur):
 
 def create_shipping_report(cur):
     dateTime_templates = ['Accepted at', 'Completed at', 'Boarded at', 'Picked up at']
+    global df_papernote
     for i in dateTime_templates:
         df_papernote[i] = pd.to_datetime(df_papernote[i])
     df_papernote = df_papernote.drop(['Address', 'Phone', 'Email', 'ordName', 'staffName', 'Phone', 'Email', 'cusName'], axis=1)
@@ -225,6 +249,7 @@ if __name__ == "__main__":
         catalog="iceberg",
     )
     cur = conn.cursor()
+    cur.execute("CREATE SCHEMA IF NOT EXISTS iceberg.shipping_report with (LOCATION = 's3a://lakehouse/')")
     create_cancel_report(cur=cur)
     create_shipping_report(cur=cur)
     create_cancel_report(cur=cur)
