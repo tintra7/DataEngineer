@@ -5,6 +5,8 @@ postgres.txt
 
 !starburst-2.0.0.metabase-driver.jar
 
+\minio-data
+
 .env
 
 \ocr_img
@@ -16,5 +18,3 @@ postgres.txt
 *.ipynb
 
 \ipynb_checkpoints
-
-\minio-data

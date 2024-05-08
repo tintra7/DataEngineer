@@ -44,9 +44,9 @@ def parse_shipping_info(text):
                 key, value = matched_prop.strip(), line.split(":")[1].strip()
 
                 d = line.split(" ")
-                time_hour = d[-2] + d[-1]
-                time_date = d[-3]
-                
+                time_hour = d[-2].strip() + d[-1].strip()
+                time_date = d[-3].strip()
+                                
                 dateTimeDetails[key] = time_date + " " + time_hour
         elif current_section == 'customer Details':
             matched_prop = fuzzy_match(line, customer_templates)
