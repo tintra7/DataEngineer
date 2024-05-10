@@ -55,14 +55,15 @@ def sql_to_dataframe(conn, query, columns):
 # Read data from database
 def read_from_database(table):
     # Get the lasted record of table 
-    df = pd.read_parquet(f"s3://datalake/{table}",
-                    storage_options={
-                        "key": MINIO_ACCESS_KEY,
-                        "secret": MINIO_SECRET_KEY,
-                        "client_kwargs": {"endpoint_url": "http://localhost:9000/"}
-                    }).drop(['year', 'month', 'day'], axis=1)
+    # df = pd.read_parquet(f"s3://datalake/{table}",
+    #                 storage_options={
+    #                     "key": MINIO_ACCESS_KEY,
+    #                     "secret": MINIO_SECRET_KEY,
+    #                     "client_kwargs": {"endpoint_url": "http://localhost:9000/"}
+    #                 }).drop(['year', 'month', 'day'], axis=1)
     
-    stt = max(df['stt'])
+    # stt = max(df['stt'])
+    stt = 0
     print("Reading data from", table)
     if table == "Account":
         columns = ["id", "firstname", "lastname", "email", "phone", "created", "stt", "staffid", "storeid"]
@@ -105,7 +106,7 @@ def load_data_to_minio(tables):
 
     for table in tables:
         df = read_from_database(table)
-        df.to_parquet(f"s3://datalake/{table}/year={year}/month={month}/day={day}/{table_name}.parquet".format(table_name=table_name),
+        df.to_parquet(f"s3://datalake/{table}/year={year}/month={month}/day=9/{table_name}.parquet".format(table_name=table_name),
                     storage_options={
                         "key": MINIO_ACCESS_KEY,
                         "secret": MINIO_SECRET_KEY,

@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 from dotenv import load_dotenv
-from datetime import date
+from datetime import date, timedelta
 import requests
 from minio import Minio
 from io import BytesIO
@@ -34,16 +34,35 @@ respone = requests.get(url)
 
 image_urls = respone.json()['image_urls']
 
+today = date.today()
+yesterday = today - timedelta(days=1)
 
+def get_lastest_image(date):
+    list_obj = minio_client.list_objects("datalake", prefix=f"PaperNote/year={date.year}/month={date.month}/day={date.day}", recursive=True)
+    max = 0
+    for obj in list_obj:
+        img = obj.object_name
+        path = img.split("/")
+        number = int(path[-1][11:-4])
+        if number > max:
+            max = number
+    return number
+lastest_image = get_lastest_image(yesterday)
+year = str(date.today().year)
+month = str(date.today().month)
+day = str(date.today().day)
+path = "/PaperNote/" + f"year={year}/month={month}/day={day}/"
+
+print("Yesterday was:", yesterday)
 for i, image_url in enumerate(image_urls):
     # Fetch the image from the URL
+    name = image_url.split('/')[-1]
+    number = int(name[11:-4])
+    print(number)
+    if number <= 240:
+        continue
     response = requests.get(image_url)
-    year = str(date.today().year)
-    month = str(date.today().month)
-    day = str(date.today().day)
-    path = "/PaperNote/" + f"year={year}/month={month}/day={day}/"
-
-    name = path + image_url.split('/')[-1]
+    name = path + name
     # found = minio_client.bucket_exists(bucket_name=BUCKET_NAME)
     # if not found:
     #     minio_client.make_bucket(path)

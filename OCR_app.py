@@ -63,7 +63,8 @@ def parse_shipping_info(text):
             if matched_prop:
                 key, value = matched_prop.strip(), line.split(":")[1].strip()
                 staffDetails[key] = value
-
+    if 'StaffID:' not in staffDetails or staffDetails["'StaffID:'"] == None:
+        staffDetails["'StaffID:'"] = "SD12"
     return dateTimeDetails, customerDetails, orderDetails, staffDetails
 
 class Model:

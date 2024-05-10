@@ -45,6 +45,7 @@ def read_data_by_date(
         day=str(date.today().day)
     ):
     print("Read data from {table}".format(table=table))
+
     df = pd.read_parquet(f"s3://datalake/{table}/year={year}/month={month}/day={day}",
                     storage_options={
                         "key": MINIO_ACCESS_KEY,
@@ -53,6 +54,18 @@ def read_data_by_date(
                     })
     return df
 
+def get_lastest_image(year=str(date.today().year), 
+        month=str(date.today().month), 
+        day=str(date.today().day)):
+    list_obj = minio_client.list_objects("datalake", prefix=f"PaperNote/year={year}/month={month}/day={day}", recursive=True)
+    max = 0
+    for obj in list_obj:
+        img = obj.object_name
+        path = img.split("/")
+        number = int(path[-1][11:-4])
+        if number > max:
+            max = number
+    return number
 
 def parse_papernote(
         year=str(date.today().year), 
@@ -66,26 +79,33 @@ def parse_papernote(
     staff_templates = ['Name', 'Phone', 'Email', "StaffID", "Store"]
     columns = dateTime_templates + customer_templates + order_templates + staff_templates
     df = pd.DataFrame(columns=columns)
-    model = Model()
     count = 1
+    model = Model()
+    # latest_image = get_lastest_image(day=9)
     for obj in list_obj:
-        if count == 100:
-            break
-        count += 1
+
         img = obj.object_name
         path = img.split("/")
         number = path[-1][11:-4]
         print(number)
-        if number == "124":
-            continue
+        # if number <= latest_image:
+        #     continue
 
         response = minio_client.get_object(BUCKET_NAME, img)
         
         model.load_image(response=response)
         json = model.detect_ocr()
+
         json_flat = {}
         for i in json:
             json_flat.update(i)
+        flag = 0
+        for i in dateTime_templates:
+            if json_flat.get(i+':')[:4] != "2024":
+                flag = 1
+                break
+        if flag:
+            continue
         ls = [json_flat.get(i+':') for i in columns]
         df.loc[len(df.index)] = ls
 
@@ -112,8 +132,9 @@ def transform_papernote(df_papernote):
     return df_papernote
 
 
-def create_cancel_report(cur, df_shipping, df_order, df_store):
+def create_cancel_report(cur, df_shippingservice, df_shipping, df_order, df_store):
     print("Creating cancel report")
+    cur.execute("DROP TABLE IF EXISTS iceberg.shipping_report.cancel_report")
     df = df_shipping.merge(df_shippingservice, how="inner", left_on="serviceid", right_on="id")
     df = df[["order_id", "cancelled_at", "servicename"]]
     df = df.merge(df_order[["id","storeid"]], left_on="order_id", right_on="id")
@@ -122,7 +143,6 @@ def create_cancel_report(cur, df_shipping, df_order, df_store):
     df = df.dropna(axis=0)
     df.cancelled_at = df['cancelled_at'].dt.time
     df = df.drop("stt", axis=1)
-    cur.execute("DROP TABLE IF EXISTS iceberg.shipping_report.cancel_report")
     query = """CREATE TABLE IF NOT EXISTS iceberg.shipping_report.cancel_report(
     order_id varchar,
     cancelled_at time(6),
@@ -146,25 +166,31 @@ def create_cancel_report(cur, df_shipping, df_order, df_store):
 
 
 def create_shipping_report(cur ,df_papernote, df_shipping, df_shippingservice, df_order, df_store):
-
     print("Creating shipping report")
-    df = df_shipping[df_shipping['completed_at'].notnull()]
-    df = df.drop("cancelled_at", axis=1)
-    df = df[['accepted_at', 'boarded_at', 'picked_up_at', 
-         'completed_at', 'shiptype', 'order_id', 'serviceid']]
-    df = df.merge(df_shippingservice, how="inner", left_on="serviceid", right_on="id")
-    df = df.drop(["serviceid", "serviceprovider", "stt"], axis=1)
-    df = df.merge(df_order, how="inner", left_on="order_id", right_on='id')
-    df = df.drop(['order_id', 'id_x', 'id_y', 'customername', 'created', 'stt', 'orderdetail'], axis=1)
-    df = df.merge(df_store, left_on="storeid", right_on="id")
-    df = df.drop(['storeid', 'id', 'street', 'city', 'stt'], axis=1)
-    shipping_report = pd.concat([df, df_papernote], join="outer", axis=0)
+    cur.execute("DROP TABLE IF EXISTS iceberg.shipping_report.shipping")
+    if not df_shipping.empty:
+        df = df_shipping[df_shipping['completed_at'].notnull()]
+        df = df.drop("cancelled_at", axis=1)
+        df = df[['accepted_at', 'boarded_at', 'picked_up_at', 
+            'completed_at', 'shiptype', 'order_id', 'serviceid']]
+        df = df.merge(df_shippingservice, how="inner", left_on="serviceid", right_on="id")
+        df = df.drop(["serviceid", "serviceprovider", "stt"], axis=1)
+        df = df.merge(df_order, how="inner", left_on="order_id", right_on='id')
+        df = df.drop(['order_id', 'id_x', 'id_y', 'customername', 'created', 'stt', 'orderdetail'], axis=1)
+        df = df.merge(df_store, left_on="storeid", right_on="id")
+        df = df.drop(['storeid', 'id', 'street', 'city', 'stt'], axis=1)
+        shipping_report = pd.concat([df, df_papernote], join="outer", axis=0)
+    else:
+        columns = ["accepted_at", "boarded_at", "picked_up_at", "completed_at", "shiptype", 
+                   "servicename", "price", "storename", "StaffID"]
+        shipping_report = pd.DataFrame(columns=columns)
+        shipping_report = pd.concat([shipping_report, df_papernote], join="outer", axis=0)
     for i in shipping_report.columns[:4]:
         shipping_report[i] = pd.to_datetime(shipping_report[i])
     shipping_report['duration'] = abs((shipping_report['completed_at'] - shipping_report['boarded_at']).dt.total_seconds() / 3600)
     shipping_report['servicename'] = shipping_report['servicename'].fillna("Staff")
     shipping_report['StaffID'] = shipping_report['StaffID'].fillna("Service")
-    cur.execute("DROP TABLE IF EXISTS iceberg.shipping_report.shipping")
+    
     query = """CREATE TABLE IF NOT EXISTS iceberg.shipping_report.shipping(
                 accepted_at timestamp(6),
                 boarded_at timestamp(6),
@@ -179,6 +205,7 @@ def create_shipping_report(cur ,df_papernote, df_shipping, df_shippingservice, d
             )"""
     cur.execute(query)
     for i in range(len(shipping_report)):
+        
         accepted_at = shipping_report.iloc[i]["accepted_at"]
         boarded_at = shipping_report.iloc[i]["boarded_at"]
         picked_up_at = shipping_report.iloc[i]["picked_up_at"]
@@ -191,9 +218,13 @@ def create_shipping_report(cur ,df_papernote, df_shipping, df_shippingservice, d
 
         StaffID = shipping_report.iloc[i]["StaffID"]
         duration = shipping_report.iloc[i]["duration"]
-
+        
         query = f"INSERT INTO iceberg.shipping_report.shipping VALUES (TIMESTAMP '{accepted_at}',TIMESTAMP '{boarded_at}', TIMESTAMP '{picked_up_at}',TIMESTAMP '{completed_at}',{shiptype}, '{servicename}', {price}, '{storename}', '{StaffID}',{duration})"
-        cur.execute(query)
+
+        try:
+            cur.execute(query)
+        except:
+            print(query)
         
 
 def create_papernote(cur, df_papernote):
@@ -220,7 +251,6 @@ def create_papernote(cur, df_papernote):
         price = df_papernote.iloc[i]["price"]
         storename = df_papernote.iloc[i]["storename"]
         StaffID = df_papernote.iloc[i]["StaffID"]
-
         query = f"INSERT INTO iceberg.shipping_report.paper_note VALUES (TIMESTAMP '{accepted_at}',TIMESTAMP '{boarded_at}', TIMESTAMP '{picked_up_at}',TIMESTAMP '{completed_at}', {price}, '{StaffID}', '{storename}',{shiptype})"
         cur.execute(query)
 
@@ -230,12 +260,27 @@ if __name__ == "__main__":
     df_product = read_data(table="Product")
     df_store = read_data(table="Store")
     df_account = read_data(table="Account")
+    df_shippingservice = read_data(table="ShippingService")
     df_order = read_data(table="Order")
     df_shipping = read_data(table="Shipping")
-    df_shippingservice = read_data(table="ShippingService")
-    df_papernote = parse_papernote(day=2)
+    # try:
+    #     df_order = read_data_by_date(table="Order")
+    # except:
+    #     df_order = pd.DataFrame(columns=["id", "customername", "storeid", "created", "stt", "orderdetail", "price"])
+    # try:
+    #     df_shipping = read_data_by_date(table="Shipping")
+    # except:
+    #     columns = ["id", "accepted_at", "boarded_at", "picked_up_at", "completed_at", "cancelled_at", "charged", "serviceid", "order_id", "stt", 'shiptype']
+    #     df_shipping = pd.DataFrame(columns=columns)
+    
+    # df_papernote = parse_papernote()
+    df_papernote = pd.read_csv("text.csv")
+    df_papernote = df_papernote.drop(df_papernote.columns[0], axis=1)
+    df_papernote['StaffID'] = df_papernote['StaffID'].fillna("SD17")
+    df_papernote.to_csv("text.csv")
     df_papernote = transform_papernote(df_papernote.copy())
 
+    print(df_papernote)
     conn = connect(
         host="localhost",
         port=8080,
@@ -244,7 +289,8 @@ if __name__ == "__main__":
     )
     cur = conn.cursor()
     cur.execute("CREATE SCHEMA IF NOT EXISTS iceberg.shipping_report with (LOCATION = 's3a://lakehouse/')")
-    create_cancel_report(cur=cur, df_shipping=df_shipping, df_order=df_order, df_store=df_store)
+    if not df_shipping.empty:
+        create_cancel_report(cur=cur, df_shippingservice=df_shippingservice, df_shipping=df_shipping, df_order=df_order, df_store=df_store)
     create_shipping_report(cur=cur, df_papernote=df_papernote, df_shipping=df_shipping, df_shippingservice=df_shippingservice, df_order=df_order, df_store=df_store)
     create_papernote(cur=cur, df_papernote=df_papernote)
     cur.close()
